@@ -1,0 +1,117 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+/* Global */
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.bg{
+    background-color: #E7FFF9;
+}
+
+/* Nav */
+.bg-nav{
+    background-color: #00CC99 !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header{
+    position: relative;
+    z-index: 1;
+}
+
+.bg-shadow{
+    filter: drop-shadow(0 2px 10px rgba(43, 17, 0, 0.7));
+    text-shadow: 0 2px 35px rgba(43, 17, 0, 0.7);
+}
+
+/* mancha del header */
+nav::after {
+    content:'';
+    z-index: -1;
+    position: absolute;
+    background-color: #00CC99;
+    left: 23%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+nav::before {
+    content:'';
+    z-index: -1;
+    position: absolute;
+    background-color: #00CC99;
+    left: -10%;
+    top: 0.5%;
+    width: 400px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer{
+    position: relative;
+}
+
+.bg-footer{
+    width: 100%;
+}
+
+.bg-footer-head{
+    background-color: #00CC99;
+}
+
+.bg-footer-foot{
+    background-color: #14FFC4;
+    width: 100%;
+}
+
+.bg-text-footer{
+    color: #003366;
+    font-weight: 700;
+}
+
+.bg-shadow-social{
+    filter: drop-shadow(0 2px 20px rgba(43, 17, 0, 0.7));
+}
+
+    /* Style icons */
+    .bg-social{
+        color: #003366;
+        transition: 0.1s;
+    }
+
+    .bg-social:hover{
+        color: #002041;
+        transform: translateY(-10%);
+    }
+
+/* mancha del footer */
+#footer::after {
+    content:'';
+    z-index: -1;
+    position: absolute;
+    background-color: #00CC99;
+    bottom: 15%;
+    right: 23%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#footer::before {
+    content:'';
+    z-index: -1;
+    position: absolute;
+    background-color: #00CC99;
+    right: 0;
+    bottom: 10%;
+    width: 400px;
+    height: 200px;
+    border-top-left-radius: 50%;
+}

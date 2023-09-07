@@ -1,0 +1,220 @@
+/* ------------ Header ------------ */
+
+/* Laptop L */
+@media (max-width: 1440px) {
+    nav::after {
+        left: 13%;
+    }
+}
+/* Nest Hub Max */
+@media (max-width: 1280px) {
+    nav::after {
+        left: 16%;
+    }
+}
+/* Laptop */
+ @media (max-width: 1024px) {
+    nav::after {
+        left: 22%;
+    }
+}
+/* Surface pro 7 */
+@media (max-width: 912px) {
+    nav::after {
+        left: 28%;
+    }
+}
+/* Ipad Air */
+ @media (max-width: 820px) {
+    nav::after {
+        left: 27%;
+    }
+}
+/* Ipad Air */
+ @media (max-width: 800px) {
+    nav::after {
+        left: 30%;
+    }
+}
+/* Tablet */
+ @media (max-width: 768px) {
+    nav::before {
+        left: -20%;
+    }
+
+    nav::after {
+        left: 23%;
+    }
+}
+/* Blackberry */
+@media (max-width: 600px) {
+    nav::before {
+        left: -25%;
+    }
+
+    nav::after {
+        left: 27%;
+    }
+}
+/* Surface Duo */
+@media (max-width: 540px) {
+    nav::before {
+        left: -25%;
+    }
+
+    nav::after {
+        left: 34%;
+    }
+}
+/* Nokia N9 */
+@media (max-width: 480px) {
+    nav::before {
+        left: -25%;
+    }
+
+    nav::after {
+        left: 40%;
+    }
+}
+/* movil L */
+@media (max-width: 425px) {
+    nav::before {
+        left: -50%;
+    }
+
+    nav::after {
+        left: 26%;
+    }
+}
+/* movil M */
+@media (max-width: 375px) {
+    nav::before {
+        left: -60%;
+    }
+
+    nav::after {
+        left: 26%;
+    }
+}
+/* movil S */
+@media (max-width: 320px) {
+    nav::before {
+        left: -70%;
+    }
+
+    nav::after {
+        left: 26%;
+    }
+}
+/* Galaxy fold */
+@media (max-width: 280px) {
+    nav::before {
+        left: -80%;
+    }
+
+    nav::after {
+        left: 30%;
+    }
+}
+
+/* ------------ Footer ------------ */
+
+/* Laptop L */
+@media (max-width: 1440px) {
+    #footer::after {
+        right: 22%;
+    }
+}
+/* Nest Hub Max */
+@media (max-width: 1280px) {
+    #footer::after {
+        right: 25%;
+    }
+}
+/* Laptop */
+ @media (max-width: 1024px) {
+    #footer::after {
+        right: 30%;
+    }
+}
+/* Surface pro 7 */
+@media (max-width: 912px) {
+    #footer::after {
+        right: 35%;
+    }
+}
+/* Ipad Air */
+ @media (max-width: 820px) {
+    #footer::after {
+        right: 40%;
+    }
+}
+
+/* Nexus 10 */
+@media (max-width: 800px) {
+    #footer::before {
+        width: 330px;
+    }
+
+    #footer::after {
+        right: 30%;
+        bottom: 20%;
+    }
+}
+
+/* Microsoft Lumia 550 */
+@media (max-width: 640px) {
+    #footer::before {
+        width: 300px;
+    }
+
+    #footer::after {
+        right: 30%;
+        bottom: 23%;
+    }
+}
+
+/* Blackberry playBook*/
+@media (max-width: 600px) {
+    #footer::before {
+        width: 300px;
+    }
+
+    #footer::after {
+        right: 34%;
+        bottom: 23%;
+    }
+}
+/* Nokia N9 */
+@media (max-width: 480px) {
+    #footer::before {
+        width: 250px;
+    }
+
+    #footer::after {
+        right: 32%;
+        bottom: 23%;
+    }
+}
+/* Pixel 3 XL */
+@media (max-width: 393px) {
+    #footer::before {
+        width: 230px;
+    }
+
+    #footer::after {
+        right: 32%;
+        bottom: 23%;
+    }
+}
+/* movil S */
+@media (max-width: 320px) {
+    #footer::before {
+        width: 200px;
+    }
+
+    #footer::after {
+        right: 32%;
+        bottom: 23%;
+    }
+}
