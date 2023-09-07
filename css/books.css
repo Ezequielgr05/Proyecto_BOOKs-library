@@ -25,6 +25,7 @@
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
     text-align: center;
+    color: #003366;
 }
 
 .btnBook {
@@ -40,11 +41,13 @@
     border: none;
     border-radius: 50px;
     width: 200px;
+    transition: all 0.5s ease-in-out;
 }
 
 .btnBookNo {
     background: none;
     border: none;
+    transition: all 0.5s ease-in-out;
 }
 .abierto, 
 .cerrado {
@@ -62,7 +65,7 @@
 }
 
 .abierto {
-    width: 270px;
+    width: 225px;
 }
 
 .cerrado {   
