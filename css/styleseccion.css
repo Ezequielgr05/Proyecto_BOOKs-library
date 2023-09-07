@@ -2,3 +2,17 @@ body{
     background-color: #00CC99;
 }
 
+#carouselExampleControlsNoTouching{
+    margin-top: 70px;
+   border: solid black;
+   background-color: rgba(14, 14, 179, 0.5);
+   width: 1000px;
+   margin-left: 60px;
+   display:flex;
+}
+
+.carousel-inner{
+   
+   display:flex;
+}
+
