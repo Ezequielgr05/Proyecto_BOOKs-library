@@ -1,0 +1,54 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+.book {
+    display: flex; /* Utiliza el modelo de caja flexible para la disposición */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacio entre la imagen y la sección de texto */
+    position: relative;
+}
+
+.imgBook {
+    width: 200px;
+    height: auto;
+    transition: all 1s ease-in-out;
+}
+
+.book img:hover {
+    transform: rotateY(-40deg);
+    box-shadow: 28px 0 0 #dfdfdf, 30px 0 0 #c4c4c4;
+}
+
+.titleBook {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+}
+
+.btnBook {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #E7FFF9;
+    background-color: #003366;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+}
+
+.book div {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    width: 30px;
+    overflow: hidden;
+    left: 110px;
+}
+
+.book div:hover {
+    width: 500px;
+    left: 160px;
+}
