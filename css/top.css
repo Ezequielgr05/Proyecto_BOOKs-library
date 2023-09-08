@@ -6,9 +6,9 @@ body {
 /* Estilos para el centro de la pantalla */
 .centrar-en-medio {
     .rectangulo-amarillo
-    width: 200px; /* Nuevo ancho del rectángulo */
-    height: 100px; /* Nuevo alto del rectángulo */
-    background-color:  #003366; /* Color de fondo del rectángulo */
+    width: 1000px; /* Nuevo ancho del rectángulo */
+    height: 300px; /* Nuevo alto del rectángulo */
+    background-color: yellow; /* Color de fondo del rectángulo */
     display: flex;
     justify-content: center;
     align-items: center;
