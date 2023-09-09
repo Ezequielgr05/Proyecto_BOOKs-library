@@ -36,3 +36,7 @@ body {
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Sombra: desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
 }
+.imagen {
+    width: 100%; /* Ancho de la imagen al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción de aspecto de la imagen */
+}
