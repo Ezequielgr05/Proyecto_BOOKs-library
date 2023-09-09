@@ -36,9 +36,3 @@ body {
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Sombra: desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
 }
-
-.imagen-portada {
-    position: absolute; /* Establece la posición absoluta */
-    top: 0; /* Alinea la parte superior de la imagen con la parte superior del contenedor */
-    left: 0; /* Alinea la parte izquierda de la imagen con la parte izquierda del contenedor */
-}
