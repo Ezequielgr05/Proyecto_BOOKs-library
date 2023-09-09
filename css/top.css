@@ -31,12 +31,58 @@ body {
 
 .rectangulo-azul {
     width: 900px; /* Nuevo ancho del rectángulo */
-    height: 350px; /* Nuevo alto del rectángulo */
+    height: 365px; /* Nuevo alto del rectángulo */
     background-color:  #003366; /* Color de fondo del rectángulo */
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Sombra: desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
 }
-.imagen {
-    width: 100%; /* Ancho de la imagen al 100% del contenedor */
-    height: auto; /* Altura automática para mantener la proporción de aspecto de la imagen */
+.imagen1 {
+    position: absolute;
+top: 16%;
+left: 14%;
+width: 180px;
+height: 281px;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+transform: rotateY(-25deg);
+}
+.imagen2 {
+position: absolute;
+top: 16%;
+left: 29%;
+width: 180px;
+height: 281px;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+transform: rotateY(-25deg);
+}
+.imagen3 {
+    position: absolute;
+    top: 16%;
+    left: 44%;
+    width: 180px;
+    height: 281px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform: rotateY(-25deg);
+}
+.imagen4 {
+    position: absolute;
+    top: 16%;
+    left: 59%;
+    width: 180px;
+    height: 281px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform: rotateY(-25deg)
+}
+.imagen5 {
+    position: absolute;
+    top: 16%;
+    left: 74%;
+    width: 180px;
+    height: 281px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform: rotateY(-25deg)
 }
