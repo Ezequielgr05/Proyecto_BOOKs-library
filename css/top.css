@@ -5,27 +5,35 @@ body {
 }
 /* Estilos para el centro de la pantalla */
 .centrar-en-medio {
-    .rectangulo-amarillo
-    width: 1000px; /* Nuevo ancho del rectángulo */
-    height: 300px; /* Nuevo alto del rectángulo */
-    background-color: yellow; /* Color de fondo del rectángulo */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20vh; /* Esto ocupa toda la altura de la pantalla */
     font-size: 36px; /* Cambia el tamaño de fuente a tu preferencia, por ejemplo, 36px */
 }
+.rectangulo-nombre{
+    width: 450px; /* Ancho del rectángulo */
+    height: 80px; /* Alto del rectángulo */
+    background-color: yellow; /* Color de fondo del rectángulo */
+    color: black; /* Color del texto dentro del rectángulo */
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 65px; /* Centra el texto verticalmente */
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Sombra: desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
+}
 .center {
-    margin: 0;
-    padding: 0;
+    display: flex;
     justify-content: center;
-    align-items: center; 
-    min-height: 100vh;
-    background-color: #E7FFF9; /* Color de fondo de la página */
+    align-items: center;
+    height: 40vh; /* Esto ocupa toda la altura de la pantalla */
+    font-size: 36px; /* Cambia el tamaño de fuente a tu preferencia, por ejemplo, 36px */
 }
 
 .rectangulo-azul {
-    width: 1200px; /* Nuevo ancho del rectángulo */
-    height: 400px; /* Nuevo alto del rectángulo */
+    width: 900px; /* Nuevo ancho del rectángulo */
+    height: 350px; /* Nuevo alto del rectángulo */
     background-color:  #003366; /* Color de fondo del rectángulo */
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Sombra: desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
+    
 }
