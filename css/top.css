@@ -35,5 +35,18 @@ body {
     background-color:  #003366; /* Color de fondo del rectángulo */
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Sombra: desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
+}
+.contenedor {
+    position: relative; /* Establece la posición relativa */
+    width: 300px; /* Ancho del contenedor */
+    height: 200px; /* Alto del contenedor */
     
+}
+.imagen-superpuesta {
+    position: absolute; /* Establece la posición absoluta */
+    top: 0; /* Alinea la parte superior de la imagen con la parte superior del contenedor */
+    left: 0; /* Alinea la parte izquierda de la imagen con la parte izquierda del contenedor */
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Ajusta la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Ajusta el tamaño de la imagen para que cubra el contenedor */
 }
