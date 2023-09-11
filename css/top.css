@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
 body {
     background-color: #E7FFF9;
-    font-family: Nunito Sans, sans-serif; /* Cambia 'Nombre de la Fuente' por el nombre de la fuente que quieras usar */
+    font-family: 'Nunito Sans', sans-serif; /* Cambia 'Nombre de la Fuente' por el nombre de la fuente que quieras usar */
 }
 /* Estilos para el centro de la pantalla */
 .centrar-en-medio {
@@ -285,28 +285,4 @@ transform: rotateY(-25deg);
 }
 .boton10:hover {
     background-color: rgb(2, 97, 65);
-}
-@media (max-width: 320px) {
-    /* Estilos para pantallas pequeñas */
-    .rectangulo-nombre
-    .rectangulo-azul
-    .centrar-en-medio
-    .imagen1
-    .imagen2
-    .imagen3
-    .imagen4
-    .imagen5
-    .boton1
-    .boton2
-    .boton3
-    .boton4
-    .boton5
-    .boton6
-    .boton7
-    .boton8
-    .boton9
-    .boton10    
-}
-@media (min-width: 769px) {
-    /* Estilos para pantallas grandes */
 }
