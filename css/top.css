@@ -181,7 +181,7 @@ transform: rotateY(-25deg);
     font-size: 5.5mm;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: bold:
+    font-weight: bold;
 }
 .boton5:hover {
     background-color: rgb(2, 97, 65);
@@ -201,7 +201,7 @@ transform: rotateY(-25deg);
     font-size: 5.5mm;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 'Nunito Sans', sans-serif
+    font-weight: bold;
 }
 .boton6:hover {
     background-color: rgb(2, 97, 65);
@@ -285,4 +285,28 @@ transform: rotateY(-25deg);
 }
 .boton10:hover {
     background-color: rgb(2, 97, 65);
+}
+@media (max-width: 320px) {
+    /* Estilos para pantallas pequeñas */
+    .rectangulo-nombre
+    .rectangulo-azul
+    .centrar-en-medio
+    .imagen1
+    .imagen2
+    .imagen3
+    .imagen4
+    .imagen5
+    .boton1
+    .boton2
+    .boton3
+    .boton4
+    .boton5
+    .boton6
+    .boton7
+    .boton8
+    .boton9
+    .boton10    
+}
+@media (min-width: 769px) {
+    /* Estilos para pantallas grandes */
 }
