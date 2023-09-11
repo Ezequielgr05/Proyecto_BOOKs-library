@@ -13,7 +13,7 @@ body {
 }
 .rectangulo-nombre{
     width: 450px; /* Ancho del rectángulo */
-    height: 80px; /* Alto del rectángulo */
+    height: 90px; /* Alto del rectángulo */
     background-color: #FFCC00; /* Color de fondo del rectángulo */
     color: black; /* Color del texto dentro del rectángulo */
     text-align: center; /* Centra el texto horizontalmente */
@@ -99,7 +99,9 @@ transform: rotateY(-25deg);
     border-radius: 2.5px; /* Borde redondeado del botón */
     cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
     font-size: 5.5mm;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif; /* Cambiar la familia de fuentes */
+    font-weight: bold; /* Cambiar el peso de la fuente (negrita) */
 }
 .boton1:hover {
     background-color: rgb(2, 97, 65);;
@@ -117,7 +119,9 @@ transform: rotateY(-25deg);
     border-radius: 2.5px;
     cursor: pointer;
     font-size: 5.5mm;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
 }
 .boton2:hover {
     background-color: rgb(2, 97, 65);
@@ -234,7 +238,7 @@ transform: rotateY(-25deg);
     position: absolute;
     bottom: 10px;
     top: 59.1%;
-    left: 74.81%;
+    left: 74.83%;
     background-color: #00CC99;
     color: black;
     width: 80.18px;
@@ -252,7 +256,7 @@ transform: rotateY(-25deg);
     position: absolute;
     bottom: 10px;
     top: 59.1%;
-    left: 80.52%;
+    left: 80.50%;
     background-color: #00CC99;
     color: black;
     width: 80.18px;
