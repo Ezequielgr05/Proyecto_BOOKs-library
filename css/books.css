@@ -6,6 +6,8 @@
     align-items: center; /* Centra verticalmente los elementos */
     justify-content: space-between; /* Espacio entre la imagen y la sección de texto */
     position: relative;
+    width: max-content;
+    height: max-content;
 }
 
 .imgBook {
@@ -14,14 +16,16 @@
     transition: all 1s ease-in-out;
 }
 
-.book img:hover {
+.imgBookAbierto {
     transform: rotateY(-40deg);
     box-shadow: 28px 0 0 #dfdfdf, 30px 0 0 #c4c4c4;
 }
 
-.titleBook {
+.titleBookT, .titleBookN {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
+    text-align: center;
+    color: #003366;
 }
 
 .btnBook {
@@ -31,24 +35,48 @@
     font-family: 'Nunito Sans', sans-serif;
     font-size: 15px;
     font-weight: 700;
+    text-align: center;
     color: #E7FFF9;
     background-color: #003366;
     border: none;
     border-radius: 50px;
     width: 200px;
+    transition: all 0.5s ease-in-out;
 }
 
-.book div {
+.btnBookNo {
+    background: none;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+.abierto, 
+.cerrado {
+    position: relative;
     position: absolute;
+    left: 200px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
-    width: 30px;
-    overflow: hidden;
-    left: 110px;
+    background-color: #00CC99;
+    padding: 25px;
+    height: 230px;
+    transition: all 1s ease-in-out;
 }
 
-.book div:hover {
-    width: 500px;
-    left: 160px;
+.abierto {
+    width: 225px;
+}
+
+.cerrado {   
+    width: 10px;
+}
+
+.titleBookN {
+    position: absolute;
+    font-size: 20px;
+    top: 37%;
+    left: -70px;
+    width: 200px;
+    transform: rotate(90deg);
 }
