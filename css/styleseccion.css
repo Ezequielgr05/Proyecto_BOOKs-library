@@ -8,7 +8,7 @@ body{
 .slider-container{
 background-color: #003366;
 border-radius: 3px;
-box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+box-shadow: rgba(0, 0, 0, 0.5) 0px 30px 90px;
  }
 
  .slider-container{
@@ -24,7 +24,7 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
    height: 50px;
    width: 200px;
 background-color: #FFCC00;
-box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);
+box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);;
 
 }
 
@@ -35,8 +35,17 @@ h1{
     border-color: 2px #000000;
 }
 .slider-nav{
-    background-color:#00CC99;
+    background-color:#00cc9994;
     border-radius: 3px;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);
+  
     height: 335px;;
+}
+
+img{
+    height: 300px;
+    width: 200px;
+}
+
+.book{
+   margin-left: 150px;
 }
