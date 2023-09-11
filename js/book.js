@@ -40,7 +40,7 @@ for (let i in book) {
                 btnLeer[bookActivo].classList.toggle("btnBook");
                 btnLeer[bookActivo].classList.toggle("btnBookNo");
                 btnLeer[bookActivo].textContent = "Leer";
-            }, 800);
+            }, 400);
         }
     });
 
@@ -53,14 +53,16 @@ for (let i in book) {
 
             imgBook[i].classList.toggle("imgBookAbierto")
 
-            btnInfo[i].classList.toggle("btnBook");
-            btnInfo[i].classList.toggle("btnBookNo");
-            btnInfo[i].textContent = " ";
+            setTimeout(() => {
+                btnInfo[i].classList.toggle("btnBook");
+                btnInfo[i].classList.toggle("btnBookNo");
+                btnInfo[i].textContent = " ";
 
-            btnLeer[i].classList.toggle("btnBook");
-            btnLeer[i].classList.toggle("btnBookNo");
-            btnLeer[i].textContent = " ";
-
+                btnLeer[i].classList.toggle("btnBook");
+                btnLeer[i].classList.toggle("btnBookNo");
+                btnLeer[i].textContent = " ";
+            }, 401)
+           
             setTimeout(() => {
                 titleBook[i].classList.toggle("titleBookT");
                 titleBook[i].classList.toggle("titleBookN");
