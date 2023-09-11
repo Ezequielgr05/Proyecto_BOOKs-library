@@ -139,7 +139,9 @@ transform: rotateY(-25deg);
     border-radius: 2.5px;
     cursor: pointer;
     font-size: 5.5mm;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
 }
 .boton3:hover {
     background-color: rgb(2, 97, 65);
@@ -157,7 +159,9 @@ transform: rotateY(-25deg);
     border-radius: 2.5px;
     cursor: pointer;
     font-size: 5.5mm;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
 }
 .boton4:hover {
     background-color: rgb(2, 97, 65);
@@ -175,7 +179,9 @@ transform: rotateY(-25deg);
     border-radius: 2.5px;
     cursor: pointer;
     font-size: 5.5mm;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold:
 }
 .boton5:hover {
     background-color: rgb(2, 97, 65);
@@ -193,7 +199,9 @@ transform: rotateY(-25deg);
     border-radius: 2.5px;
     cursor: pointer;
     font-size: 5.5mm;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 'Nunito Sans', sans-serif
 }
 .boton6:hover {
     background-color: rgb(2, 97, 65);
@@ -211,7 +219,9 @@ transform: rotateY(-25deg);
     border-radius: 2.5px;
     cursor: pointer;
     font-size: 5.5mm;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
 }
 .boton7:hover {
     background-color: rgb(2, 97, 65);
@@ -229,7 +239,9 @@ transform: rotateY(-25deg);
     border-radius: 2.5px;
     cursor: pointer;
     font-size: 5.5mm;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
 }
 .boton8:hover {
     background-color: rgb(2, 97, 65);
@@ -247,7 +259,9 @@ transform: rotateY(-25deg);
     border-radius: 2.5px;
     cursor: pointer;
     font-size: 5.5mm;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
 }
 .boton9:hover {
     background-color: rgb(2, 97, 65);
@@ -265,7 +279,9 @@ transform: rotateY(-25deg);
     border-radius: 2.5px;
     cursor: pointer;
     font-size: 5.5mm;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
 }
 .boton10:hover {
     background-color: rgb(2, 97, 65);
