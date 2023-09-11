@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKs library</title>
+    <link rel="shortcut icon" href="./img/logos/logoWindow.png" type="image/x-icon">
+</head>
+<body>
+    <div id="my_pdf_viewer">
+        <div id="canvas_container">
+            <canvas id="pdf_renderer"></canvas>
+        </div>
+        <div id="navigation_controls">
+            <button id="go_previous">atras</button>
+            <input type="number" value="1" id="current_page">
+            <button id="go_next">siguiente</button>
+        </div>
+        <div id="zoom_controls">
+            <button id="zoom_in">+</button>
+            <button id="zoom_out">-</button>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="js/lectorPDF.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.1.81/pdf.min.js" integrity="sha512-RV+l/3iMDTmIt64ztJmriqLRZl2IwGHcG+655gFxUa20Uq9GljEsY3wibq5BZkGzRlMbYFHUPelVQvWvZxP38w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
