@@ -137,4 +137,8 @@ header{
     height: auto;
     background-color: #4e84ff;
   }
-  
+
+  .slide-visible{
+   
+    background-color: #959dad;
+  }
