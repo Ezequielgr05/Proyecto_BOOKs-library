@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
 body {
     background-color: #E7FFF9;
-    font-family: Nunito Sans, sans-serif; /* Cambia 'Nombre de la Fuente' por el nombre de la fuente que quieras usar */
+    font-family: 'Nunito Sans', sans-serif; /* Cambia 'Nombre de la Fuente' por el nombre de la fuente que quieras usar */
 }
 /* Estilos para el centro de la pantalla */
 .centrar-en-medio {
@@ -181,7 +181,7 @@ transform: rotateY(-25deg);
     font-size: 5.5mm;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: bold:
+    font-weight: bold;
 }
 .boton5:hover {
     background-color: rgb(2, 97, 65);
@@ -201,7 +201,7 @@ transform: rotateY(-25deg);
     font-size: 5.5mm;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 'Nunito Sans', sans-serif
+    font-weight: bold;
 }
 .boton6:hover {
     background-color: rgb(2, 97, 65);
