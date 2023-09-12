@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+body {
+    background-color: #E7FFF9;
+    font-family: 'Nunito Sans', sans-serif; /* Cambia 'Nombre de la Fuente' por el nombre de la fuente que quieras usar */
+}
+/* Estilos para el centro de la pantalla */
+.centrar-en-medio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; /* Esto ocupa toda la altura de la pantalla */
+    font-size: 36px; /* Cambia el tamaño de fuente a tu preferencia, por ejemplo, 36px */
+}
+.rectangulo-nombre{
+    width: 450px; /* Ancho del rectángulo */
+    height: 90px; /* Alto del rectángulo */
+    background-color: #FFCC00; /* Color de fondo del rectángulo */
+    color: black; /* Color del texto dentro del rectángulo */
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 65px; /* Centra el texto verticalmente */
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Sombra: desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Esto ocupa toda la altura de la pantalla */
+    font-size: 36px; /* Cambia el tamaño de fuente a tu preferencia, por ejemplo, 36px */
+}
+
+.rectangulo-azul {
+    width: 900px; /* Nuevo ancho del rectángulo */
+    height: 365px; /* Nuevo alto del rectángulo */
+    background-color:  #003366; /* Color de fondo del rectángulo */
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Sombra: desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
+}
+.imagen1 {
+    position: absolute;
+top: 16%;
+left: 14%;
+width: 180px;
+height: 281px;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+border-radius: 5px;
+transform: rotateY(-25deg);
+}
+.imagen2 {
+position: absolute;
+top: 16%;
+left: 29%;
+width: 180px;
+height: 281px;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+border-radius: 5px;
+transform: rotateY(-25deg);
+}
+.imagen3 {
+    position: absolute;
+    top: 16%;
+    left: 44%;
+    width: 180px;
+    height: 281px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transform: rotateY(-25deg);
+}
+.imagen4 {
+    position: absolute;
+    top: 16%;
+    left: 59%;
+    width: 180px;
+    height: 281px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transform: rotateY(-25deg)
+}
+.imagen5 {
+    position: absolute;
+    top: 16%;
+    left: 74%;
+    width: 180px;
+    height: 281px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transform: rotateY(-25deg)
+}
+.boton1 {
+    position: absolute; /* Establece la posición absoluta dentro del contenedor */
+    bottom: 10px; /* Espacio desde la parte inferior del contenedor */
+    top: 59.1%;
+    left: 14.83%; /* Mueve el botón hacia el centro horizontal del contenedor */
+    background-color: #00CC99; /* Color de fondo del botón */
+    color: black; /* Color del texto del botón */
+    width: 80.18px;
+    height: 57px;
+    border: none; /* Borde del botón */
+    border-radius: 2.5px; /* Borde redondeado del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+    font-size: 5.5mm;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif; /* Cambiar la familia de fuentes */
+    font-weight: bold; /* Cambiar el peso de la fuente (negrita) */
+}
+.boton1:hover {
+    background-color: rgb(2, 97, 65);;
+}
+.boton2 {
+    position: absolute;
+    bottom: 10px;
+    top: 59.1%;
+    left: 20.49%;
+    background-color: #00CC99;
+    color: black;
+    width: 80.18px;
+    height: 57px;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    font-size: 5.5mm;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+.boton2:hover {
+    background-color: rgb(2, 97, 65);
+}
+.boton3 {
+    position: absolute;
+    bottom: 10px;
+    top: 59.1%;
+    left: 29.75%;
+    background-color: #00CC99;
+    color: black;
+    width: 80.18px;
+    height: 57px;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    font-size: 5.5mm;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+.boton3:hover {
+    background-color: rgb(2, 97, 65);
+}
+.boton4 {
+    position: absolute;
+    bottom: 10px;
+    top: 59.1%;
+    left: 35.46%;
+    background-color: #00CC99;
+    color: black;
+    width: 80.18px;
+    height: 57px;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    font-size: 5.5mm;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+.boton4:hover {
+    background-color: rgb(2, 97, 65);
+}
+.boton5 {
+    position: absolute;
+    bottom: 10px;
+    top: 59.1%;
+    left: 44.82%;
+    background-color: #00CC99;
+    color: black;
+    width: 80.18px;
+    height: 57px;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    font-size: 5.5mm;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+.boton5:hover {
+    background-color: rgb(2, 97, 65);
+}
+.boton6 {
+    position: absolute;
+    bottom: 10px;
+    top: 59.1%;
+    left: 50.47%;
+    background-color: #00CC99;
+    color: black;
+    width: 80.18px;
+    height: 57px;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    font-size: 5.5mm;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+.boton6:hover {
+    background-color: rgb(2, 97, 65);
+}
+.boton7 {
+    position: absolute;
+    bottom: 10px;
+    top: 59.1%;
+    left: 59.84%;
+    background-color: #00CC99;
+    color: black;
+    width: 80.18px;
+    height: 57px;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    font-size: 5.5mm;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+.boton7:hover {
+    background-color: rgb(2, 97, 65);
+}
+.boton8 {
+    position: absolute;
+    bottom: 10px;
+    top: 59.1%;
+    left: 65.53%;
+    background-color: #00CC99;
+    color: black;
+    width: 80.18px;
+    height: 57px;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    font-size: 5.5mm;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+.boton8:hover {
+    background-color: rgb(2, 97, 65);
+}
+.boton9 {
+    position: absolute;
+    bottom: 10px;
+    top: 59.1%;
+    left: 74.83%;
+    background-color: #00CC99;
+    color: black;
+    width: 80.18px;
+    height: 57px;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    font-size: 5.5mm;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+.boton9:hover {
+    background-color: rgb(2, 97, 65);
+}
+.boton10 {
+    position: absolute;
+    bottom: 10px;
+    top: 59.1%;
+    left: 80.50%;
+    background-color: #00CC99;
+    color: black;
+    width: 80.18px;
+    height: 57px;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    font-size: 5.5mm;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+.boton10:hover {
+    background-color: rgb(2, 97, 65);
+}
