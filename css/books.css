@@ -60,12 +60,14 @@
     align-items: center;
     background-color: #00CC99;
     padding: 25px;
-    height: 230px;
+    height: 240px;
+    top: 15%;
     transition: all 1s ease-in-out;
 }
 
 .abierto {
-    width: 225px;
+    width: 250px;
+
 }
 
 .cerrado {   
@@ -75,8 +77,12 @@
 .titleBookN {
     position: absolute;
     font-size: 20px;
-    top: 37%;
-    left: -70px;
+    top: 43%;
+    left: -73px;
     width: 200px;
     transform: rotate(90deg);
+}
+
+.margin {
+    margin-top: 100px;
 }

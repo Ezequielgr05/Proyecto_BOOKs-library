@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pdfview {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
