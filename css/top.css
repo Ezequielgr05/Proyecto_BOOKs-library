@@ -11,9 +11,15 @@ body {
     height: 20vh; /* Esto ocupa toda la altura de la pantalla */
     font-size: 36px; /* Cambia el tamaño de fuente a tu preferencia, por ejemplo, 36px */
 }
+.top {
+    position: relative;
+}
+
 .rectangulo-nombre{
     width: 450px; /* Ancho del rectángulo */
     height: 90px; /* Alto del rectángulo */
+    position: absolute;
+    z-index: 2;
     background-color: #FFCC00; /* Color de fondo del rectángulo */
     color: black; /* Color del texto dentro del rectángulo */
     text-align: center; /* Centra el texto horizontalmente */
@@ -30,6 +36,10 @@ body {
 }
 
 .rectangulo-azul {
+    position: relative;
+    position: absolute;
+    bottom: -20%;
+    z-index: 3;
     width: 900px; /* Nuevo ancho del rectángulo */
     height: 365px; /* Nuevo alto del rectángulo */
     background-color:  #003366; /* Color de fondo del rectángulo */
@@ -38,28 +48,28 @@ body {
 }
 .imagen1 {
     position: absolute;
-top: 16%;
-left: 14%;
-width: 180px;
-height: 281px;
-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-border-radius: 5px;
-transform: rotateY(-25deg);
+    bottom: 16%;
+    left: -9%;
+    width: 180px;
+    height: 281px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transform: rotateY(-25deg);
 }
 .imagen2 {
-position: absolute;
-top: 16%;
-left: 29%;
-width: 180px;
-height: 281px;
-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-border-radius: 5px;
-transform: rotateY(-25deg);
+    position: absolute;
+    bottom: 16%;
+    left: 15%;
+    width: 180px;
+    height: 281px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transform: rotateY(-25deg);
 }
 .imagen3 {
     position: absolute;
-    top: 16%;
-    left: 44%;
+    bottom: 16%;
+    left: 40%;
     width: 180px;
     height: 281px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -68,8 +78,8 @@ transform: rotateY(-25deg);
 }
 .imagen4 {
     position: absolute;
-    top: 16%;
-    left: 59%;
+    bottom: 16%;
+    left: 64%;
     width: 180px;
     height: 281px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -78,8 +88,8 @@ transform: rotateY(-25deg);
 }
 .imagen5 {
     position: absolute;
-    top: 16%;
-    left: 74%;
+    bottom: 16%;
+    left: 88%;
     width: 180px;
     height: 281px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -89,7 +99,7 @@ transform: rotateY(-25deg);
 .boton1 {
     position: absolute; /* Establece la posición absoluta dentro del contenedor */
     bottom: 10px; /* Espacio desde la parte inferior del contenedor */
-    top: 59.1%;
+    top: 81%;
     left: 14.83%; /* Mueve el botón hacia el centro horizontal del contenedor */
     background-color: #00CC99; /* Color de fondo del botón */
     color: black; /* Color del texto del botón */
