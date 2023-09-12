@@ -38,7 +38,7 @@ body {
 .rectangulo-azul {
     position: relative;
     position: absolute;
-    bottom: -20%;
+    bottom: -15%;
     z-index: 3;
     width: 900px; /* Nuevo ancho del rectángulo */
     height: 365px; /* Nuevo alto del rectángulo */
@@ -48,7 +48,7 @@ body {
 }
 .imagen1 {
     position: absolute;
-    bottom: 16%;
+    bottom: 19%;
     left: -9%;
     width: 180px;
     height: 281px;
@@ -58,7 +58,7 @@ body {
 }
 .imagen2 {
     position: absolute;
-    bottom: 16%;
+    bottom: 19%;
     left: 15%;
     width: 180px;
     height: 281px;
@@ -68,7 +68,7 @@ body {
 }
 .imagen3 {
     position: absolute;
-    bottom: 16%;
+    bottom: 19%;
     left: 40%;
     width: 180px;
     height: 281px;
@@ -78,7 +78,7 @@ body {
 }
 .imagen4 {
     position: absolute;
-    bottom: 16%;
+    bottom: 19%;
     left: 64%;
     width: 180px;
     height: 281px;
@@ -88,7 +88,7 @@ body {
 }
 .imagen5 {
     position: absolute;
-    bottom: 16%;
+    bottom: 19%;
     left: 88%;
     width: 180px;
     height: 281px;
@@ -100,7 +100,7 @@ body {
     position: absolute; /* Establece la posición absoluta dentro del contenedor */
     bottom: 10px; /* Espacio desde la parte inferior del contenedor */
     top: 81%;
-    left: 14.83%; /* Mueve el botón hacia el centro horizontal del contenedor */
+    left: -7.7%; /* Mueve el botón hacia el centro horizontal del contenedor */
     background-color: #00CC99; /* Color de fondo del botón */
     color: black; /* Color del texto del botón */
     width: 80.18px;
@@ -119,8 +119,8 @@ body {
 .boton2 {
     position: absolute;
     bottom: 10px;
-    top: 59.1%;
-    left: 20.49%;
+    top: 81%;
+    left: 0.7%;
     background-color: #00CC99;
     color: black;
     width: 80.18px;
@@ -139,8 +139,8 @@ body {
 .boton3 {
     position: absolute;
     bottom: 10px;
-    top: 59.1%;
-    left: 29.75%;
+    top: 81%;
+    left: 16.29%;
     background-color: #00CC99;
     color: black;
     width: 80.18px;
@@ -159,8 +159,8 @@ body {
 .boton4 {
     position: absolute;
     bottom: 10px;
-    top: 59.1%;
-    left: 35.46%;
+    top: 81%;
+    left: 24.79%;
     background-color: #00CC99;
     color: black;
     width: 80.18px;
@@ -179,8 +179,8 @@ body {
 .boton5 {
     position: absolute;
     bottom: 10px;
-    top: 59.1%;
-    left: 44.82%;
+    top: 81%;
+    left: 41%;
     background-color: #00CC99;
     color: black;
     width: 80.18px;
@@ -199,7 +199,7 @@ body {
 .boton6 {
     position: absolute;
     bottom: 10px;
-    top: 59.1%;
+    top: 81%;
     left: 50.47%;
     background-color: #00CC99;
     color: black;
@@ -219,7 +219,7 @@ body {
 .boton7 {
     position: absolute;
     bottom: 10px;
-    top: 59.1%;
+    top: 81%;
     left: 59.84%;
     background-color: #00CC99;
     color: black;
@@ -239,7 +239,7 @@ body {
 .boton8 {
     position: absolute;
     bottom: 10px;
-    top: 59.1%;
+    top: 81%;
     left: 65.53%;
     background-color: #00CC99;
     color: black;
@@ -259,7 +259,7 @@ body {
 .boton9 {
     position: absolute;
     bottom: 10px;
-    top: 59.1%;
+    top: 81%;
     left: 74.83%;
     background-color: #00CC99;
     color: black;
@@ -279,7 +279,7 @@ body {
 .boton10 {
     position: absolute;
     bottom: 10px;
-    top: 59.1%;
+    top: 81%;
     left: 80.50%;
     background-color: #00CC99;
     color: black;
