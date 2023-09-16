@@ -11,17 +11,15 @@
 }
 
 .imgBook {
-    width: 200px;
-    height: auto;
+    width: 180px;
+    height: 281px;
     transition: all 1s ease-in-out;
-}
-
-.imgBookAbierto {
     transform: rotateY(-40deg);
     box-shadow: 28px 0 0 #dfdfdf, 30px 0 0 #c4c4c4;
 }
 
-.titleBookT, .titleBookN {
+
+.titleBookT{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
     text-align: center;
@@ -44,45 +42,92 @@
     transition: all 0.5s ease-in-out;
 }
 
-.btnBookNo {
-    background: none;
-    border: none;
-    transition: all 0.5s ease-in-out;
-}
-.abierto, 
-.cerrado {
+.abierto {
     position: relative;
     position: absolute;
-    left: 200px;
+    left: 180px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     justify-content: center;
     align-items: center;
     background-color: #00CC99;
     padding: 25px;
-    height: 240px;
-    top: 15%;
+    height: 245px;
+    top: 9%;
     transition: all 1s ease-in-out;
-}
-
-.abierto {
     width: 250px;
-
-}
-
-.cerrado {   
-    width: 10px;
-}
-
-.titleBookN {
-    position: absolute;
-    font-size: 20px;
-    top: 43%;
-    left: -73px;
-    width: 200px;
-    transform: rotate(90deg);
 }
 
 .margin {
     margin-top: 100px;
 }
+
+@media screen and (max-width: 430px){
+    .imgBook {
+        width: 160px;
+        height: 210px;
+        box-shadow: 15px 0 0 #dfdfdf, 17px 0 0 #c4c4c4;
+    }
+    .abierto {
+        width: 170px;
+        height: 205px;
+        left: 155px;
+        top: 1%;
+        padding: 25px;
+    }
+    .titleBookT {
+        font-size: larger;
+    }
+    .btnBook {
+        width: 115px;
+        font-size: 13px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .imgBook {
+        width: 150px;
+        height: 200px;
+        box-shadow: 15px 0 0 #dfdfdf, 17px 0 0 #c4c4c4;
+    }
+    .abierto {
+        width: 170px;
+        height: 195px;
+        left: 145px;
+        top: 2%;
+        padding: 25px;
+    }
+    .titleBookT {
+        font-size: larger;
+    }
+    .btnBook {
+        width: 110px;
+        font-size: 13px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .imgBook {
+        width: 100px;
+        height: 150px;
+        box-shadow: 15px 0 0 #dfdfdf, 17px 0 0 #c4c4c4;
+    }
+    .abierto {
+        width: 150px;
+        height: 145px;
+        left: 100px;
+        top: 2%;
+        padding: 20px;
+    }
+    .titleBookT {
+        font-size: medium;
+    }
+    .btnBook {
+        width: 95px;
+        font-size: 10px;
+        margin: 5px;
+    }
+}
+
