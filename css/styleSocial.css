@@ -142,3 +142,43 @@ header{
    
     background-color: #959dad;
   }
+
+  @media screen and (max-width: 390px){
+
+    .text{
+    padding-left: 50px;
+    }
+    img{
+      margin-left: 120px;
+      }
+
+      .row{
+        padding-top: 50px;
+        }
+       
+        .wrapper{
+          
+          
+          width: 100%;
+          }
+  }
+
+   @media screen and (max-width: 320px){
+
+    .text{
+    padding-left: 30px;
+    }
+    img{
+      margin-left: 90px;
+      }
+
+      .row{
+        padding-top: 50px;
+        }
+       
+        .wrapper{
+          
+          
+          width: 100%;
+          }
+  }
