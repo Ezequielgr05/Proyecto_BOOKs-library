@@ -16,7 +16,7 @@ Lider del proyecto, y programador junior front-end
 ### - Roberto Julian Ugoletti (julian71406)
 Tester, y programador junior front-end
 
-👉 Github - https://github.com/Julain71406
+👉 Github - https://github.com/Julian71406
 
 👉 Instagram - https://www.instagram.com/julianj11/
 
