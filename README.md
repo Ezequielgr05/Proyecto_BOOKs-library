@@ -11,7 +11,7 @@ Lider del proyecto, y programador junior front-end
 
 👉 Instagram - https://www.instagram.com/ezequielgomezr/
 
-👉 LinkedIn - 
+👉 LinkedIn - https://www.linkedin.com/in/ezequielgomezrossi/
 
 ### - Roberto Julian Ugoletti (julian71406)
 Tester, y programador junior front-end

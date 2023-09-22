@@ -47,6 +47,9 @@ h1{
     .slider-nav {
         height: auto;
     }
+    .section {
+        margin-top: 0% !important;
+    }
 }
 
 @media screen and (max-width: 380px){
