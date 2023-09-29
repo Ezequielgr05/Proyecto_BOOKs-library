@@ -9,6 +9,7 @@ if (/.*Mobi|.*Android/i.test(navigator.userAgent)) {
     }
 }
 
+
 window.addEventListener("orientationchange", () => {
     if (/.*Mobi|.*Android/i.test(navigator.userAgent)) {
         if (window.orientation === 0 || window.orientation === 180) {
