@@ -17,9 +17,10 @@ body {
 
 .rectangulo-nombre{
     width: 450px; 
-    height: 90px; 
+    height: 75px; 
     position: absolute;
-    bottom: 75%;
+    top: -15%;
+    bottom: 35%;
     z-index: 2;
     background-color: #FFCC00; 
     color: black; 
@@ -39,7 +40,7 @@ body {
 .rectangulo-azul {
     position: absolute;
     bottom: 21.5%;
-    z-index: 3;
+    z-index: 4;
     width: 900px;
     height: 365px; 
     background-color:  #003366; 

@@ -18,12 +18,11 @@ body {
 .rectangulo-nombre {
   width: 450px;
   height: 75px;
-  
-  position: relative;
+  position: relative; 
   top: -20%;
   left: 16.5%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 1;
   background-color: #ffcc00;
   color: #003366;
   text-align: center;
@@ -43,7 +42,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   bottom: -15%;
-  z-index: 3;
+  z-index: 4;
   width: 900px;
   height: 365px;
   background-color: #003366;
