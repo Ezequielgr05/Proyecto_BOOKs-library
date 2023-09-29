@@ -3,6 +3,8 @@ body{
   background-color: #E7FFF9;
   }
 
+  
+
 .pencil {
     margin-left: 620px;
     margin-top: 240px;
@@ -189,4 +191,45 @@ body{
       stroke-dashoffset: 439.82;
       transform: translate(100px,100px) rotate(112deg);
     }
+  }
+
+  @media screen and (max-width: 412px)
+  { 
+    .pencil {
+      margin-bottom: 100px;
+      width: 15em;
+      height: 15em;
+      margin-left: 300px;
+      top: 50%;
+      left: 50%;
+      background-color: aqua;
+    }
+  
+
+    
+  }
+  
+
+  @media screen and (max-width: 1024px)
+  { 
+
+    .pencil{
+    width: 15em;
+    height: 15em;
+    position: absolute;
+    right: 35%;
+    bottom:30%
+  }
+  }
+  
+
+  @media screen and (max-width: 1280px){ 
+
+    .pencil{
+      margin-left: 550px;
+      margin-top: 250px;
+      display: block;
+      width: 15em;
+      height: 15em;
+  }
   }
