@@ -1,7 +1,11 @@
 const inputSearch = document.querySelector("#inputSearch")
-const btnSearch = document.querySelector("#btnSearch")
+const linkSearch = document.querySelector("#btnSearch")
 
-btnSearch.addEventListener("click", () => {
+linkSearch.addEventListener("click", (e) => {
+    e.preventDefault()
     var contenido = inputSearch.value
-    sessionStorage.getItem('contenido', contenido)
+    sessionStorage.setItem('contenido', contenido)
+    setTimeout(() => {
+        window.location.href = e.target.href;
+    }, 100)
 })
