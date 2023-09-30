@@ -22,7 +22,7 @@ body {
   top: -20%;
   left: 16.5%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: -1;
   background-color: #ffcc00;
   color: #003366;
   text-align: center;
@@ -42,7 +42,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   bottom: -15%;
-  z-index: 4;
+  z-index: -1;
   width: 900px;
   height: 365px;
   background-color: #003366;

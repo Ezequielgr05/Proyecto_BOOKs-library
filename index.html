@@ -30,12 +30,35 @@
                             height="50" class="d-inline-block align-text-top">
                     </a>
 
-                    <!-- buscador -->
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2 buscador" type="search" placeholder="buscar libros" aria-label="Search" id="inputSearch">
-                      <a href="./html/other/buscador.html" class="btn btn btn-outline-light" id="btnSearch"><i class="bi bi-search"></i></a>
-                    </form> 
+                    <!-- off canvas -->
+                    <button class="navbar-cat" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                      <i class="bi bi-book"></i> 
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Categorias</h5>
+                        <button type="button" class="close" data-bs-dismiss="offcanvas" aria-label="Close">
+                          <i class="bi bi-x-lg"></i>
+                        </button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <!-- buscador -->
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2 buscador" type="search" placeholder="buscar libros" aria-label="Search" id="inputSearch">
+                          <a href="./html/other/buscador.html" class="btn btn btn-outline-search" id="btnSearch"><i class="bi bi-search"></i></a>
+                        </form> 
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accion</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+
+                    
+                    </div>
+
+                    
                 </nav>
         </header>
             <!------------>
@@ -67,7 +90,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="templates/pantallacarga.html">holaaaa</a>
+
                     <!-- Seccion Fantasia -->
                     <div class="seccion mt-5 mx-3">
                         <div class="amarillo"><h1>Fantasia</h1></div>

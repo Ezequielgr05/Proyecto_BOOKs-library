@@ -36,7 +36,7 @@ header{
 /* mancha del header */
 nav::after {
     content:'';
-    z-index: -10;
+    z-index: -1;
     position: absolute;
     background-color: #00CC99;
     left: 23%;
@@ -47,7 +47,7 @@ nav::after {
 
 nav::before {
     content:'';
-    z-index: -10;
+    z-index: -1;
     position: absolute;
     background-color: #00CC99;
     left: -10%;
@@ -55,6 +55,41 @@ nav::before {
     width: 400px;
     height: 200px;
     border-radius: 50%;
+}
+
+.navbar-cat {
+    background: none;
+    border: none;
+    color: #003366;
+    font-size: 25px;
+}
+
+.offcanvas-header {
+    background-color: #00CC99;
+    color: #003366;
+}
+
+.offcanvas-body {
+    background-color: #aef6e4;
+    color: #E7FFF9;
+}
+
+.close {
+    background: none;
+    border: none;
+    color: #003366;
+    font-size: 25px;
+}
+
+.btn-outline-search {
+    border: 1.5px solid #003366;
+    color: #003366;
+    transition: 0.2s;
+}
+
+.btn-outline-search:hover {
+    background: #003366;
+    color: #aef6e4;
 }
 
 /* Footer */
