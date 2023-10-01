@@ -18,12 +18,36 @@
 
     "LaMujerDeCollarDeTerciopelo": "../pdfs/Ficcion/LaMujerDeCollarDeTerciopelo.pdf",
 
-    "CancionDeHieloYFuego": "../pdfs/JuegoDeTronos/LIBRO1-CANCIONDEHIELOYFUEGO",
-    "ChoqueDeReyes": "../pdfs/JuegoDeTronos/LIBRO2-CHOQUEDEREYES",
-    "TormentaDeEspadasI": "../pdfs/JuegoDeTronos/LIBRO3-TORMENTADEESPADASI",
-    "TormentaDeEspadasII": "../pdfs/JuegoDeTronos/LIBRO4-TORMENTADEESPADASII",
-    "DanzaDeDragones": "../pdfs/JuegoDeTronos/LIBRO5-DANZADEDRAGONES",
+    "MasQuePalabras": "../pdfs/Hearthstopper/MasQuePalabras.pdf",
+    "MiPersonaFavorita": "../pdfs/Hearthstopper/MiPersonaFavorita.pdf",
+    "UnChicoConoceAOtro": "../pdfs/Hearthstopper/UnChicoConoceAOtro.pdf",
+    "UnPasoAdelante": "../pdfs/Hearthstopper/UnPasoAdelante.pdf",
 
+    "CancionDeHieloYFuego": "../pdfs/JuegoDeTronos/LIBRO1-CANCIONDEHIELOYFUEGO.pdf",
+    "ChoqueDeReyes": "../pdfs/JuegoDeTronos/LIBRO2-CHOQUEDEREYES.pdf",
+    "TormentaDeEspadasI": "../pdfs/JuegoDeTronos/LIBRO3-TORMENTADEESPADASI.pdf",
+    "TormentaDeEspadasII": "../pdfs/JuegoDeTronos/LIBRO4-TORMENTADEESPADASII.pdf",
+    "DanzaDeDragones": "../pdfs/JuegoDeTronos/LIBRO5-DANZADEDRAGONES.pdf",
+
+    "LaMuerteDeLordEdgware": "../pdfs/Misterio/LaMuerteDeLordEdgware.pdf",
+    "LasManzanas": "../pdfs/Misterio/LasManzanas.pdf",
+    "ElDiaQueSePerdioElAmor": "../pdfs/Misterio/ElDiaQueSePerdioElAmor.pdf",
+    "ElDiaQueSePerdioLaCordura": "../pdfs/Misterio/ElDiaQueSePerdioLaCordura.pdf",
+    "ElJuegoDelAlma": "../pdfs/Misterio/ElJuegoDelAlma.pdf",
+    "LaChicaDeNieve": "../pdfs/Misterio/LaChicaDeNieve.pdf",
+    "LaPacienteSilenciosa": "../pdfs/Misterio/LaPacienteSilenciosa.pdf",
+
+    "ElCondeDeMontecristo": "../pdfs/Novelas/ElCondeDeMontecristo.pdf",
+    "ElPrincipito": "../pdfs/Novelas/ElPrincipito.pdf",
+    "ElVizcondeDeBragelonne": "../pdfs/Novelas/ElVizcondeDeBragelonne.pdf",
+    "LaDamaDeLasCamelias": "../pdfs/Novelas/LaDamaDeLasCamelias.pdf",
+    "LazarilloDeTormes": "../pdfs/Novelas/LazarilloDeTormes.pdf",
+    "MilYUnaNoches": "../pdfs/Novelas/MilYUnaNoches.pdf",
+    
     "Dracula": "../pdfs/Terror/Dracula.pdf",
+    "Asylum": "../pdfs/Terror/Asylum.pdf",
+    "Catacomb": "../pdfs/Terror/Catacomb.pdf",
+    "EscapeDelAsylum": "../pdfs/Terror/EscapeDelAsylum.pdf",
+    "Sanctum": "../pdfs/Terror/Sanctum.pdf",
     "LestatElVampiro": "../pdfs/Terror/LestatElVampiro.pdf"
 }
