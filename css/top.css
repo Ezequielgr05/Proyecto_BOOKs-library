@@ -22,7 +22,7 @@ body {
   top: -20%;
   left: 16.5%;
   transform: translate(-50%, -50%);
-  z-index: -1;
+  z-index: 3;
   background-color: #ffcc00;
   color: #003366;
   text-align: center;
@@ -30,24 +30,24 @@ body {
   border-radius: 5px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
-.center {
-  height: 40vh;
-  font-size: 36px;
-}
 
 .rectangulo-azul {
-  position: relative;
   position: absolute;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   bottom: -15%;
-  z-index: -1;
+  z-index: 2;
   width: 900px;
   height: 365px;
   background-color: #003366;
   border-radius: 5px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.center {
+  height: 40vh;
+  font-size: 36px;
 }
 
 .imagen {
