@@ -3,16 +3,14 @@ body{
   background-color: #E7FFF9;
   }
 
-  
-
-.pencil {
-    margin-left: 620px;
-    margin-top: 240px;
-    display: block;
-    width: 10em;
-    height: 10em;
+  .svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #f0f0f0; 
   }
-  
+
   .pencil__body1,
   .pencil__body2,
   .pencil__body3,
@@ -193,43 +191,37 @@ body{
     }
   }
 
-  @media screen and (max-width: 412px)
+  @media screen and (max-width: 414px)
   { 
-    .pencil {
-      margin-bottom: 100px;
-      width: 15em;
-      height: 15em;
-      margin-left: 300px;
-      top: 50%;
-      left: 50%;
-      background-color: aqua;
+    .svg-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
-  
 
     
   }
-  
-
-  @media screen and (max-width: 1024px)
+ 
+  @media screen and (max-width: 912px)
   { 
 
-    .pencil{
-    width: 15em;
-    height: 15em;
-    position: absolute;
-    right: 35%;
-    bottom:30%
+    .svg-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
   }
-  }
+  
   
 
   @media screen and (max-width: 1280px){ 
 
-    .pencil{
-      margin-left: 550px;
-      margin-top: 250px;
-      display: block;
-      width: 15em;
-      height: 15em;
-  }
+    .svg-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
   }
