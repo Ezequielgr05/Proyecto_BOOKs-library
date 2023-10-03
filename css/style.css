@@ -166,3 +166,11 @@ footer{
    box-shadow: none;
 }
 
+.advertencia {
+    font-family: 'Nunito Sans', sans-serif;
+    position: absolute;
+    color: #d44b4b;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
