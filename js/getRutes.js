@@ -28,7 +28,5 @@ function cargarDatos() {
 }
 
 cargarDatos();
-
-
-// var rutas = JSON.parse(localStorage.getItem('rutas')) para obtener los datos
+ 
 
