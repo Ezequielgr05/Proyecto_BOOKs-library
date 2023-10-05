@@ -29,6 +29,8 @@ function irAlLector(){
     }
     else if (host.includes("github")) {
         var nuevaURL = protocolo + '//' + host + '/Proyecto_BOOKs-library/html/lectorPDF.html';
+    } else {
+        var nuevaURL = protocolo + '//' + host + '/html/lectorPDF.html';
     }
     window.location.href = nuevaURL
 }
