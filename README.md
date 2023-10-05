@@ -32,7 +32,7 @@ Co-lider, y programador junior front-end
 👉 LinkedIn - 
 
 
-###💻 Las tecnologias utlizadas en este proyecto fueron las siguientes:
+### 💻 Las tecnologias utlizadas en este proyecto fueron las siguientes:
 
 👉 HTML5
 👉 CSS
