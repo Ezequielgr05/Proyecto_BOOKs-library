@@ -1,23 +1,23 @@
 const contenidoGuardado = document.documentElement.innerHTML;
 
-if (/.*Mobi|.*Android/i.test(navigator.userAgent)) {
-    if (window.orientation === 0 || window.orientation === 180) {
-        document.body.innerHTML = '';
+function verificarOrientacion() {
+  if (/.*Mobi|.*Android/i.test(navigator.userAgent)) {
+    if (
+      (window.orientation === 0 && window.innerWidth < 540) || // Bloquear en vertical con ancho menor a 540px
+      (window.orientation === 90 && window.innerWidth < 1024) // Bloquear en horizontal con ancho menor a 1024px
+    ) {
+      document.body.innerHTML = "";
+      advertencia = document.createElement("h1");
+      advertencia.textContent = "Para poder usar esta web sera necesario usar una tablet o computadora";
+      advertencia.classList.add("advertencia");
+      document.body.appendChild(advertencia);
     }
-    else if (window.orientation === 90 || window.orientation === -90) {
-        document.documentElement.innerHTML = contenidoGuardado;
-    }
+  }
 }
 
+// Verificar la orientación al cargar la página
+verificarOrientacion();
 
-window.addEventListener("orientationchange", () => {
-    if (/.*Mobi|.*Android/i.test(navigator.userAgent)) {
-        if (window.orientation === 0 || window.orientation === 180) {
-            document.body.innerHTML = '';
-        }
-        else if (window.orientation === 90 || window.orientation === -90) {
-            document.documentElement.innerHTML = contenidoGuardado;
-        }
-    }
-});
+// Agregar un evento para verificar la orientación en cambios
+window.addEventListener("DOMContentLoaded", verificarOrientacion);
 

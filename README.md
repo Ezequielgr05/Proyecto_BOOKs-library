@@ -32,9 +32,12 @@ Co-lider, y programador junior front-end
 👉 LinkedIn - 
 
 
-💻 Las tecnologias utlizadas en este proyecto fueron las siguientes:
+### 💻 Las tecnologias utlizadas en este proyecto fueron las siguientes:
 
 👉 HTML5
 👉 CSS
 👉 Javascript
 👉 Bootstrap
+
+## Github Pages
+https://ezequielgr05.github.io/Proyecto_BOOKs-library/
