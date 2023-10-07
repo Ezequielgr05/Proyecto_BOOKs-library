@@ -2,8 +2,6 @@ const contenido = sessionStorage.getItem('contenido')
 const inputSearch = document.querySelector("#inputSearch")
 const listTitle = Array.from(document.querySelectorAll(".itemTitle"))
 const listItem = Array.from(document.querySelectorAll(".itemList"))
-console.log(document.querySelectorAll(".itemTitle"));
-console.log(document.querySelectorAll(".itemList"));
 
 
 function buscador(substring) {
@@ -37,7 +35,7 @@ function filtrar(datos){
 
 if (contenido != '') {
     inputSearch.value = contenido;
-    // filtrar(buscador(contenido))
+    filtrar(buscador(contenido))
 }
 
 inputSearch.addEventListener("input", () => {
