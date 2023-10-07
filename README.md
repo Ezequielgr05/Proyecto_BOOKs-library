@@ -18,7 +18,7 @@ Tester, y programador junior front-end
 
 👉 Github - https://github.com/Julian71406
 
-👉 Instagram - https://www.instagram.com/julianj11/
+👉 Instagram - https://www.instagram.com/julianj11_/
 
 👉 LinkedIn - 
 
