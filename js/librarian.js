@@ -78,17 +78,81 @@ function irAlLector(){
     window.location.href = nuevaURL
 }
 
+function tituloDelLibro(text) {
+    fraseSeparada = text.replace(/([A-Z])/g, ' $1');
+    letraCapital = fraseSeparada[1]
+    fraseSinPrimerLetra = fraseSeparada.substring(2).toLowerCase()
+    fraseFinal = `${letraCapital}${fraseSinPrimerLetra}`
+    return fraseFinal
+}
+
+function obtenerDireccionRelativa() {
+    const urlActual = window.location.href;
+    const partes = urlActual.split('/');
+    partes.splice(0, 3);
+    const rutaFinal = partes.join('/');
+
+    return `../${rutaFinal}`;
+}
 
 for (var i = 0; i < btnLeer.length; i++) {
     ((i) => {
         btnLeer[i].addEventListener("click", function() {
             nombreArchivo = obtenerRuta(i);
+            console.log(nombreArchivo)
+
+            // Utiliza la función auxiliar para obtener el valor de i
+            let currentIndex = i;
+
             rutaAUsar = rutas[nombreArchivo]
-            localStorage.setItem("rutaDelArchivo", rutaAUsar);
+            console.log(rutaAUsar)
+
+            // Accede a imgBook usando el valor currentIndex
+            rutaImg = imgBook[currentIndex].getAttribute("src")
+            console.log(rutaImg)
+
+            tituloLibro = tituloDelLibro(nombreArchivo)
+            console.log(tituloLibro)
+
+            arrayNuevoLibro = [rutaAUsar, tituloLibro, rutaImg]
+            console.log(arrayNuevoLibro)
+
+            rutaActual = obtenerDireccionRelativa();
+            console.log(rutaActual)
+            localStorage.setItem("rutaRedireccion", rutaActual)
+
+            if (!(localStorage.getItem("librosLeyendo"))) {
+                matrizDeLibros = JSON.stringify([arrayNuevoLibro])
+                console.log(matrizDeLibros)
+                localStorage.setItem("librosLeyendo", matrizDeLibros)
+            } else {
+                matrizDeLibros = JSON.parse(localStorage.getItem("librosLeyendo"))
+                console.log(matrizDeLibros)
+
+                // Verifica si el libro ya está en la lista
+                const index = matrizDeLibros.findIndex(libro => libro[1] === tituloLibro);
+
+                if (index !== -1) {
+                    // Si el libro ya está, elimínalo de su posición actual
+                    matrizDeLibros.splice(index, 1);
+                }
+
+                // Agrega el libro al final de la lista
+                matrizDeLibros.push(arrayNuevoLibro);
+
+                // Verifica si la lista tiene más de 5 libros
+                if (matrizDeLibros.length > 5) {
+                    matrizDeLibros.shift(); // Elimina el primer libro
+                }
+
+                matrizDeLibros = JSON.stringify(matrizDeLibros)
+                console.log(matrizDeLibros)
+                localStorage.setItem("librosLeyendo", matrizDeLibros)
+            }
+
             setTimeout(() => {
                 irAlLector()
             }, 100)
         });
     })(i);
 }
-
