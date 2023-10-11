@@ -1,7 +1,50 @@
 btnLeer = document.querySelectorAll(".leerBTN")
 imgBook = Array.from(document.querySelectorAll(".imgBTN"))
 extension = [".jfif", ".jpg", ".jpeg", ".png"]
-rutas = JSON.parse(localStorage.getItem('rutas'))
+rutas = {
+    "ElHombreDeLaMascaraDeHierro": "../pdfs/Accion/ElHombreDeLaMascaraDeHierro.pdf",
+    "LaMomia": "../pdfs/Accion/LaMomia.pdf",
+    "EsteEsMiPueblo": "../pdfs/Ciencia/EsteEsMiPueblo.pdf",
+    "MisCreencias": "../pdfs/Ciencia/MisCreencias.pdf",
+    "SobreLaTeoriaDeLaRelatividad": "../pdfs/Ciencia/SobreLaTeoriaDeLaRelatividad.pdf",
+    "ElHuesped": "../pdfs/Cuentos/ElHuesped.pdf",
+    "AngelesYDemonios": "../pdfs/DanBrown/AngelesYDemonios.pdf",
+    "CodigoDaVinci": "../pdfs/DanBrown/CodigoDaVinci.pdf",
+    "ElSimboloPerdido": "../pdfs/DanBrown/ElSimboloPerdido.pdf",
+    "Inferno": "../pdfs/DanBrown/Inferno.pdf",
+    "Origen": "../pdfs/DanBrown/Origen.pdf",
+    "LaReinaDeLosCondenados": "../pdfs/Fantasia/LaReinaDeLosCondenados.pdf",
+    "LaMujerDeCollarDeTerciopelo": "../pdfs/Ficcion/LaMujerDeCollarDeTerciopelo.pdf",
+    "MasQuePalabras": "../pdfs/Hearthstopper/MasQuePalabras.pdf",
+    "MiPersonaFavorita": "../pdfs/Hearthstopper/MiPersonaFavorita.pdf",
+    "UnChicoConoceAOtro": "../pdfs/Hearthstopper/UnChicoConoceAOtro.pdf",
+    "UnPasoAdelante": "../pdfs/Hearthstopper/UnPasoAdelante.pdf",
+    "CancionDeHieloYFuego": "../pdfs/JuegoDeTronos/LIBRO1-CANCIONDEHIELOYFUEGO.pdf",
+    "ChoqueDeReyes": "../pdfs/JuegoDeTronos/LIBRO2-CHOQUEDEREYES.pdf",
+    "TormentaDeEspadasI": "../pdfs/JuegoDeTronos/LIBRO3-TORMENTADEESPADASI.pdf",
+    "TormentaDeEspadasII": "../pdfs/JuegoDeTronos/LIBRO4-TORMENTADEESPADASII.pdf",
+    "DanzaDeDragones": "../pdfs/JuegoDeTronos/LIBRO5-DANZADEDRAGONES.pdf",
+    "LaMuerteDeLordEdgware": "../pdfs/Misterio/LaMuerteDeLordEdgware.pdf",
+    "LasManzanas": "../pdfs/Misterio/LasManzanas.pdf",
+    "ElDiaQueSePerdioElAmor": "../pdfs/Misterio/ElDiaQueSePerdioElAmor.pdf",
+    "ElDiaQueSePerdioLaCordura": "../pdfs/Misterio/ElDiaQueSePerdioLaCordura.pdf",
+    "ElJuegoDelAlma": "../pdfs/Misterio/ElJuegoDelAlma.pdf",
+    "LaChicaDeNieve": "../pdfs/Misterio/LaChicaDeNieve.pdf",
+    "LaPacienteSilenciosa": "../pdfs/Misterio/LaPacienteSilenciosa.pdf",
+    "ElCondeDeMontecristo": "../pdfs/Novelas/ElCondeDeMontecristo.pdf",
+    "ElPrincipito": "../pdfs/Novelas/ElPrincipito.pdf",
+    "ElVizcondeDeBragelonne": "../pdfs/Novelas/ElVizcondeDeBragelonne.pdf",
+    "LaDamaDeLasCamelias": "../pdfs/Novelas/LaDamaDeLasCamelias.pdf",
+    "LazarilloDeTormes": "../pdfs/Novelas/LazarilloDeTormes.pdf",
+    "MilYUnaNoches": "../pdfs/Novelas/MilYUnaNoches.pdf",
+    "Dracula": "../pdfs/Terror/Dracula.pdf",
+    "Asylum": "../pdfs/Terror/Asylum.pdf",
+    "Catacomb": "../pdfs/Terror/Catacomb.pdf",
+    "EscapeDelAsylum": "../pdfs/Terror/EscapeDelAsylum.pdf",
+    "Sanctum": "../pdfs/Terror/Sanctum.pdf",
+    "LestatElVampiro": "../pdfs/Terror/LestatElVampiro.pdf"
+  };
+
 
 
 function obtenerRuta(key) {
@@ -35,17 +78,81 @@ function irAlLector(){
     window.location.href = nuevaURL
 }
 
+function tituloDelLibro(text) {
+    fraseSeparada = text.replace(/([A-Z])/g, ' $1');
+    letraCapital = fraseSeparada[1]
+    fraseSinPrimerLetra = fraseSeparada.substring(2).toLowerCase()
+    fraseFinal = `${letraCapital}${fraseSinPrimerLetra}`
+    return fraseFinal
+}
+
+function obtenerDireccionRelativa() {
+    const urlActual = window.location.href;
+    const partes = urlActual.split('/');
+    partes.splice(0, 3);
+    const rutaFinal = partes.join('/');
+
+    return `../${rutaFinal}`;
+}
 
 for (var i = 0; i < btnLeer.length; i++) {
     ((i) => {
         btnLeer[i].addEventListener("click", function() {
             nombreArchivo = obtenerRuta(i);
+            console.log(nombreArchivo)
+
+            // Utiliza la función auxiliar para obtener el valor de i
+            let currentIndex = i;
+
             rutaAUsar = rutas[nombreArchivo]
-            localStorage.setItem("rutaDelArchivo", rutaAUsar);
+            console.log(rutaAUsar)
+
+            // Accede a imgBook usando el valor currentIndex
+            rutaImg = imgBook[currentIndex].getAttribute("src")
+            console.log(rutaImg)
+
+            tituloLibro = tituloDelLibro(nombreArchivo)
+            console.log(tituloLibro)
+
+            arrayNuevoLibro = [rutaAUsar, tituloLibro, rutaImg]
+            console.log(arrayNuevoLibro)
+
+            rutaActual = obtenerDireccionRelativa();
+            console.log(rutaActual)
+            localStorage.setItem("rutaRedireccion", rutaActual)
+
+            if (!(localStorage.getItem("librosLeyendo"))) {
+                matrizDeLibros = JSON.stringify([arrayNuevoLibro])
+                console.log(matrizDeLibros)
+                localStorage.setItem("librosLeyendo", matrizDeLibros)
+            } else {
+                matrizDeLibros = JSON.parse(localStorage.getItem("librosLeyendo"))
+                console.log(matrizDeLibros)
+
+                // Verifica si el libro ya está en la lista
+                const index = matrizDeLibros.findIndex(libro => libro[1] === tituloLibro);
+
+                if (index !== -1) {
+                    // Si el libro ya está, elimínalo de su posición actual
+                    matrizDeLibros.splice(index, 1);
+                }
+
+                // Agrega el libro al final de la lista
+                matrizDeLibros.push(arrayNuevoLibro);
+
+                // Verifica si la lista tiene más de 5 libros
+                if (matrizDeLibros.length > 5) {
+                    matrizDeLibros.shift(); // Elimina el primer libro
+                }
+
+                matrizDeLibros = JSON.stringify(matrizDeLibros)
+                console.log(matrizDeLibros)
+                localStorage.setItem("librosLeyendo", matrizDeLibros)
+            }
+
             setTimeout(() => {
                 irAlLector()
             }, 100)
         });
     })(i);
 }
-
