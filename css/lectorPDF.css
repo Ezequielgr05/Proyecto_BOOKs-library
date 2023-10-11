@@ -51,10 +51,25 @@
     background-color: #003366;
     color: #aef6e4 !important;
     text-align: center !important;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.terminado {
+    background-color: #ffcc00;
+    color: #1b1600 !important;
+    text-align: center !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 600;
+    width: 150px !important;
 }
 
 .nav-link {
     width: 100%;
     text-align: left;
+}
+
+.nav-item {
+    display: flex;
 }
