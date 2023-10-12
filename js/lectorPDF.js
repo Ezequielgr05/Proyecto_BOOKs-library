@@ -52,7 +52,7 @@ function crearBotonEliminar(id, iterable) {
 
     botonEliminar.setAttribute("aria-current", "page");
     botonEliminar.textContent = "Terminado";
-    botonEliminar.id = id;
+    botonEliminar.setAttribute("data-id", id)
 
     item[iterable].appendChild(botonEliminar);
   }
@@ -77,21 +77,24 @@ for (x = 0; x < botones.length - 1; x++) {
   (x => {
     botones[x].addEventListener("click", () => {
       if (!botones[x].classList.contains("leyendo")) {
-        textoBoton = botones[x].textContent;
-        urlBoton = botones[x].getAttribute("data-ruta");
-        console.log(x);
-        urlImagen = matrizDeLibros[x][2];
+        botonTerminado = document.querySelector(".terminado")
+        
 
-        for (y = 0; y < botones.length; y++) {
+        for (let y = 0; y < botones.length; y++) {
           if (botones[y].classList.contains("leyendo")) {
-            botones[y].classList.remove("leyendo");
-            botonEliminar = document.getElementById(String(y));
-            botonEliminar.remove();
+            botones[y].classList.remove("leyendo")
+            botonTerminado.remove()
           }
         }
+          
+
+        textoBoton = botones[x].textContent;
+        urlBoton = botones[x].getAttribute("data-ruta");
+        urlImagen = matrizDeLibros[x][2]
 
         botones[x].classList.add("leyendo");
-        crearBotonEliminar(String(x), x);
+
+        crearBotonEliminar(x, x)
 
         pdfView.setAttribute("src", urlBoton);
         titulo.innerText = textoBoton;
@@ -103,41 +106,42 @@ for (x = 0; x < botones.length - 1; x++) {
   })(x);
 }
 
-let botonTerminado = document.querySelector(".terminado");
+// Agrega un manejador de eventos al elemento superior que contiene los botones "Terminado"
+document.body.addEventListener("click", function (event) {
+  if (event.target.classList.contains("terminado")) {
+    const botonTerminado = event.target;
+    const id = botonTerminado.getAttribute("data-id");
+    const botonOriginal = botones[id];
+    const tituloAEliminar = botonOriginal.textContent;
 
-botonTerminado.addEventListener("click", () => {
-  id = botonTerminado.getAttribute("data-id");
-  botonOriginal = botones[id];
-  tituloAEliminar = botonOriginal.textContent;
-
-  if (matrizDeLibros.length == 1) {
-    matrizDeLibros = matrizDeLibros.filter(
-      libro => libro[1] !== tituloAEliminar
-    );
-    localStorage.setItem("librosLeyendo", JSON.stringify(matrizDeLibros));
-    window.location.href = "/index.html";
-  } else {
-    matrizDeLibros = matrizDeLibros.filter(
-      libro => libro[1] !== tituloAEliminar
-    );
-    localStorage.setItem("librosLeyendo", JSON.stringify(matrizDeLibros));
-
-    // reiniciar todo
-    lista = document.querySelector("#lista");
-    lista.innerHTML = "";
-    var tituloDelLibro = matrizDeLibros[matrizDeLibros.length - 1][1];
-    var rutaDelArchivo = matrizDeLibros[matrizDeLibros.length - 1][0];
-
-    for (let i = 0; i < matrizDeLibros.length; i++) {
-      (i => {
-        let ruta = matrizDeLibros[i][0];
-        let titulo = matrizDeLibros[i][1];
-
-        creadorDeElementos(titulo, ruta, i);
-      })(i);
+    if (matrizDeLibros.length === 1) {
+      matrizDeLibros = matrizDeLibros.filter(libro => libro[1] !== tituloAEliminar);
+      localStorage.setItem("librosLeyendo", JSON.stringify(matrizDeLibros));
+      window.location.href = "/index.html";
+    } else {
+      matrizDeLibros = matrizDeLibros.filter(libro => libro[1] !== tituloAEliminar);
+      localStorage.setItem("librosLeyendo", JSON.stringify(matrizDeLibros));
+      location.reload();
     }
-
-    pdfView.setAttribute("src", rutaDelArchivo);
-    titulo.innerText = tituloDelLibro;
   }
 });
+
+
+// botonTerminado.addEventListener("click", () => {
+//   id = botonTerminado.getAttribute("data-id");
+//   botonOriginal = botones[id];
+//   tituloAEliminar = botonOriginal.textContent;
+
+//   if (matrizDeLibros.length === 1) {
+//     // Si es el último libro en la lista, eliminarlo y redirigir a la página de inicio
+//     matrizDeLibros = matrizDeLibros.filter(libro => libro[1] !== tituloAEliminar);
+//     localStorage.setItem("librosLeyendo", JSON.stringify(matrizDeLibros));
+//     window.location.href = "/index.html";
+//   } else {
+//     // Si hay más libros en la lista, simplemente eliminar el libro
+//     matrizDeLibros = matrizDeLibros.filter(libro => libro[1] !== tituloAEliminar);
+//     localStorage.setItem("librosLeyendo", JSON.stringify(matrizDeLibros));
+//     location.reload();
+//   }
+// });
+
