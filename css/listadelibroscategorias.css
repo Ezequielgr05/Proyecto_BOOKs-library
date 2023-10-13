@@ -31,31 +31,26 @@ body {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   }
   
-  .rectangulo-azul {
+  .rectangulo {
     position: absolute;
-    left: 50%;
     transform: translate(-50%, -50%);
-    bottom: 200%;
     z-index: 1;
     width: 900px;
     height: 365px;
     background-color: #003366;
     border-radius: 5px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .rectangulo:first-child {
+    left: 50%;
+    bottom: 200%;
   }
 
-  .rectangulo-azul2 {
-    position: absolute;
+  .rectangulo:first-child(2) { 
     left: 50%;
-    transform: translate(-50%, -50%);
     bottom: 104%;
-    z-index: 1;
-    width: 900px;
-    height: 365px;
-    background-color: #003366;
-    border-radius: 5px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   }
+
   
   .center {
     height: 40vh;
