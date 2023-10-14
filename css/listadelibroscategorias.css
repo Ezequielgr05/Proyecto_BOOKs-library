@@ -12,7 +12,7 @@ body {
   }
   .top {
     position: relative;
-    margin-top: 1000px;
+    margin-top: 450px;
   }
   
   .rectangulo-nombre {
@@ -33,7 +33,7 @@ body {
   
   .rectangulo-azul {
     left: 50%;
-    bottom: 200%;
+    bottom: 53%;
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -46,7 +46,7 @@ body {
 
   .rectangulo-azul2 { 
     left: 50%;
-    bottom: 104%;
+    top: 148%;
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -158,47 +158,14 @@ body {
     background-color: rgb(2, 97, 65);
   }
   /* Responsive */
-@media screen and (max-width: 1440px) {
-.rectangulo-azul {
-  }
-}
-
-@media screen and (max-width: 1368px) and (max-height: 1024px) {
-.rectangulo-azul {
-  }
-}
-
-@media screen and (max-width: 1368px) and (max-height: 912px) {
-.rectangulo-azul {
-  }
-}
-
-@media screen and (max-width: 1366px) and (max-height: 768px) {
-.rectangulo-azul {
-  }
-}
-
-@media screen and (max-width: 1322px) and (max-height: 658px) {
-.rectangulo-azul {
-  }
-}
-
-@media screen and (max-width: 1280px) and (max-height: 800px) {
-.rectangulo-azul {
-  }
-}
-
-@media screen and (max-width: 1138px) and (max-height: 712px) {
-.rectangulo-azul {
-  }
-}
-
 @media screen and (max-width: 1024px) and (max-height: 1366px) {
 .rectangulo-nombre {
     left: 20%;
   }
-
 .rectangulo-azul {
+    width: 80%;
+  }
+  .rectangulo-azul2 {
     width: 80%;
   }
 }
@@ -208,7 +175,6 @@ body {
     left: 20%;
     top: 11%;
   }
-
 .rectangulo-azul {
     width: 80%;
   }
@@ -221,7 +187,6 @@ body {
   .rectangulo-nombre {
     left: 20%;
   }
-
   .rectangulo-azul {
     width: 80%;
   }
@@ -234,7 +199,6 @@ body {
   .rectangulo-nombre {
     left: 25%;
   }
-
   .rectangulo-azul {
     width: 80%;
   }
@@ -247,7 +211,6 @@ body {
   .rectangulo-nombre {
     left: 30%;
   }
-
   .rectangulo-azul {
     width: 80%;
     height: 320px;
@@ -337,14 +300,11 @@ body {
   .rectangulo-nombre {
     left: 30%;
   }
-
   .rectangulo-azul {
-    
     width: 80%;
     height: 320px;
   }
   .rectangulo-azul2 {
-    
     width: 80%;
     height: 320px;
   }
@@ -427,12 +387,11 @@ body {
 }
 
 @media screen and (max-width: 768px) and (max-height: 1024px) {
-    .rectangulo-nombre {
-        width: 400px;
-        top: -30%;
-        left: 25%;
+  .rectangulo-nombre {
+      width: 400px;
+      top: -30%;
+      left: 25%;
     }
-
   .rectangulo-azul {
     width: 80%;
     height: 320px;
