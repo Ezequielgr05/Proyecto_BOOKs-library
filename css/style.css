@@ -174,3 +174,32 @@ footer{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* modal */
+
+.modal-header {
+    background-color: #00CC99;
+    color: #003366;
+}
+
+.modal-body {
+    background-color: #aef6e4;
+    color: #002041;
+}
+
+.modal-footer {
+    background-color: #003366;
+}
+
+.btnModal {
+    display: block;
+    padding: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #003366;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
