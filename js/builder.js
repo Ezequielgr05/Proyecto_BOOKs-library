@@ -155,7 +155,7 @@ const rutasImg = {
     'CienSonetosDeAmor': '../img/portadas/Romance/CienSonetosDeAmor.jfif',
     'DeAmorYDeMuerte': '../img/portadas/Romance/DeAmorYDeMuerte.jfif',
     'ElAmorEnLosTiemposDelColera': '../img/portadas/Romance/ElAmorEnLosTiemposDelColera.jfif',
-    'ElArteAmar': '../img/portadas/Romance/ElArteAmar.jfif',
+    'ElArteDeAmar': '../img/portadas/Romance/ElArteDeAmar.jfif',
     'RomanceroGitano': '../img/portadas/Romance/RomanceroGitano.jfif',
     'RomeoYJulieta': '../img/portadas/Romance/RomeoYJulieta.jfif',
     'SonetosDeAmor': '../img/portadas/Romance/SonetosDeAmor.jfif',
@@ -176,7 +176,7 @@ const sinopsis = {
     'ElHombreDeLaMascaraDeHierro': 'Una emocionante novela de aventuras ambientada en la Francia del siglo XVII que narra la historia de un hombre misterioso prisionero de una máscara de hierro.',
     'ElSeñorDelTiempo1ElIniciado': 'La primera entrega de una apasionante saga de ciencia ficción donde los viajes en el tiempo desencadenan una épica lucha entre el bien y el mal.',
     'ElSeñorDelTiempo2ElProscrito': 'En la segunda parte de la saga, nuestros héroes deben enfrentar desafíos aún mayores en su lucha contra las fuerzas oscuras que amenazan el tiempo mismo.',
-    'ElSeñorDelTiempo3ElOrdenYElcaos': 'La batalla final se desata en esta tercera entrega, donde los destinos se entrelazan y el orden y el caos se enfrentan en una épica confrontación.',
+    'ElSeñorDelTiempo3ElOrdenYElCaos': 'La batalla final se desata en esta tercera entrega, donde los destinos se entrelazan y el orden y el caos se enfrentan en una épica confrontación.',
     'LaMomia': 'Una emocionante novela de aventuras que sigue a un grupo de intrépidos arqueólogos mientras descubren la tumba de una antigua momia y desencadenan una maldición ancestral.',
     'LosTresMosqueteros': 'Una clásica historia de capa y espada que sigue las hazañas de los tres mosqueteros y su joven amigo DArtagnan en la Francia del siglo XVII.',
     'StarWarsElResurgirDeLaFuerzaOscura': 'Una aventura épica en el universo de Star Wars que sigue las luchas de los héroes contra las fuerzas oscuras que amenazan la galaxia.',
@@ -192,15 +192,15 @@ const sinopsis = {
     '2HarryPotterYLaCamaraSecreta': 'Harry Potter regresa a Hogwarts para su segundo año y se enfrenta a nuevos peligros, incluyendo la apertura de la misteriosa Cámara de los Secretos.',
     '3HarryPotterYElPrisioneroDeAzkaban': 'En su tercer año en Hogwarts, Harry descubre secretos sobre su familia y se enfrenta al peligroso prisionero Sirius Black.',
     '4HarryPotterYElCalizDeFuego': 'Harry se convierte en uno de los campeones en el Torneo de los Tres Magos, pero descubre conspiraciones oscuras en esta emocionante entrega.',
-    '5HarryPotterYLaOrdendelFenix': 'Harry lidera un grupo de estudiantes que se oponen a la tiranía de Dolores Umbridge mientras Lord Voldemort planea su regreso.',
+    '5HarryPotterYLaOrdenDelFenix': 'Harry lidera un grupo de estudiantes que se oponen a la tiranía de Dolores Umbridge mientras Lord Voldemort planea su regreso.',
     '6HarryPotterYElMisterioDelPrincipe': 'En su sexto año en Hogwarts, Harry descubre más sobre el pasado de Lord Voldemort y se enfrenta a desafíos que cambiarán el rumbo de la historia mágica.',
     '7HarryPotterYLasReliquiasDeLaMuerte': 'La emocionante conclusión de la serie de Harry Potter, donde Harry y sus amigos buscan y luchan contra los Horrocruxes mientras enfrentan a Lord Voldemort.',
     '8HarryPotterYLaOtraHistoria': 'Un epílogo especial que sigue a los personajes principales de Harry Potter mientras envían a sus propios hijos a Hogwarts, cerrando el ciclo de la historia.',
     'ElRetornoDelReyI': 'La tercera parte de "El Señor de los Anillos" de J.R.R. Tolkien, donde la Compañía del Anillo se enfrenta a batallas épicas mientras se acerca el enfrentamiento final con Sauron.',
     'ElRetornoDelReyII': 'La emocionante conclusión de "El Señor de los Anillos", donde se deciden los destinos de los personajes y se enfrenta a Sauron en la Batalla de los Campos del Pelennor.',
     '62ModelosParaArmar': 'Una colección de cuentos de Julio Cortázar que exploran la imaginación y la realidad, desafiando las convenciones literarias.',
-    'Bestiario': 'Cuentos de Julio Cortázar que exploran el mundo de lo extraño y lo misterioso a través de la lente de lo cotidiano.',
-    'Historiasdecronopiosyfamas': 'Una colección de relatos breves de Julio Cortázar que juegan con la realidad y la fantasía a través de personajes llamados cronopios y famas.',
+    'BESTIARIO': 'Cuentos de Julio Cortázar que exploran el mundo de lo extraño y lo misterioso a través de la lente de lo cotidiano.',
+    'HistoriasDeCronopiosYFamas': 'Una colección de relatos breves de Julio Cortázar que juegan con la realidad y la fantasía a través de personajes llamados cronopios y famas.',
     'LaMujerDeCollarDeTerciopelo': 'Una novela de A. S. Byatt que entrelaza la historia victoriana y la contemporánea a través de una historia de amor y misterio.',
     'LasArmasSecretas': 'Cuentos de Julio Cortázar que exploran la condición humana, la política y la soledad en una variedad de situaciones.',
     'Rayuela': 'Una obra innovadora de Julio Cortázar que permite a los lectores elegir su propio camino a través de la historia, desafiando las convenciones literarias.',
@@ -212,11 +212,11 @@ const sinopsis = {
     'MiPersonaFavorita': 'La continuación de la historia de amor entre los dos chicos mientras enfrentan nuevos desafíos y profundizan su relación.',
     'UnChicoConoceAOtro': 'Un nuevo comienzo en la relación de los dos chicos mientras enfrentan los altibajos de la vida y el amor.',
     'UnPasoAdelante': 'Los personajes siguen creciendo y aprendiendo mientras enfrentan cambios en sus vidas y relaciones.',
-    'LIBRO1-CANCIONDEHIELOYFUEGO': 'El primer libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que presenta un mundo de intriga política, traición y batallas en Westeros.',
-    'LIBRO2-CHOQUEDEREYES': 'El segundo libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, donde continúan las luchas por el poder en Westeros y se desatan nuevas intrigas y traiciones.',
-    'LIBRO3-TORMENTADEESPADASI': 'La tercera entrega de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que presenta batallas, traiciones y desafíos en un mundo lleno de personajes memorables.',
-    'LIBRO4-TORMENTADEESPADASII': 'La cuarta parte de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que narra las consecuencias de las luchas por el trono de hierro y los peligros que acechan a Westeros.',
-    'LIBRO5-DANZADEDRAGONES': 'El quinto libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que continúa las historias entrelazadas de personajes en un mundo lleno de giros y sorpresas.',
+    'CancionDeHieloYFuego': 'El primer libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que presenta un mundo de intriga política, traición y batallas en Westeros.',
+    'ChoqueDeReyes': 'El segundo libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, donde continúan las luchas por el poder en Westeros y se desatan nuevas intrigas y traiciones.',
+    'TormentaDeEspadasI': 'La tercera entrega de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que presenta batallas, traiciones y desafíos en un mundo lleno de personajes memorables.',
+    'TormentaDeEspadasII': 'La cuarta parte de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que narra las consecuencias de las luchas por el trono de hierro y los peligros que acechan a Westeros.',
+    'DanzaDeDragones': 'El quinto libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que continúa las historias entrelazadas de personajes en un mundo lleno de giros y sorpresas.',
     'ElDiaQueSePerdioElAmor': 'Un misterio apasionante que sigue a un detective en su búsqueda de respuestas en un caso de asesinato que se complica con secretos y traiciones.',
     'ElDiaQueSePerdioLaCordura': 'Una historia llena de suspense que sigue a un psiquiatra que se ve envuelto en un juego mortal de manipulación mental y misterio.',
     'ElJuegoDelAlma': 'Un thriller psicológico que sigue a un psicólogo que se enfrenta a un enigmático paciente y descubre oscuros secretos sobre su propia vida.',
@@ -232,7 +232,7 @@ const sinopsis = {
     'ElHuesped': 'Una novela de Albert Camus que sigue a un maestro de escuela que se ve envuelto en un crimen después de que un visitante arabe sea asesinado en su casa.',
     'ElPrincipito': 'Un cuento clásico de Antoine de Saint-Exupéry sobre un joven príncipe que viaja por diferentes planetas y aprende lecciones valiosas sobre la vida y el amor.',
     'ElVizcondeDeBragelonne': 'La tercera parte de la serie "Los Tres Mosqueteros" de Alexandre Dumas, que sigue las aventuras de DArtagnan y sus amigos en la corte de Luis XIV.',
-    'LaCasadelosespiritus': 'Una novela de Isabel Allende que combina elementos de realismo mágico con una historia familiar y política en una casa llena de secretos.',
+    'LaCasaDeLosEspiritus': 'Una novela de Isabel Allende que combina elementos de realismo mágico con una historia familiar y política en una casa llena de secretos.',
     'LaDamaDeLasCamelias': 'Una novela de Alexandre Dumas hijo que narra la historia de amor y tragedia de Marguerite Gautier, una cortesana parisina.',
     'LazarilloDeTormes': 'Una novela picaresca clásica que sigue las travesías y aventuras de Lázaro, un joven astuto y hambriento en la España del siglo XVI.',
     'MilYUnaNoches': 'Una colección de historias y cuentos de Oriente Medio, incluyendo cuentos como "Aladino y la lámpara maravillosa" y "Simbad el Marino".',
@@ -413,7 +413,9 @@ function obtenerLibrosPorCategoria(categoria, diccionario) {
     const ruta = verificadorDeRuta();
 
     for (const key in diccionario) {
-      if (diccionario.hasOwnProperty(key) && diccionario[key].includes(categoria)) {
+        rutaPorSeparado = diccionario[key].split("/")
+
+      if (diccionario.hasOwnProperty(key) && rutaPorSeparado[3].includes(categoria)) {
           filtrado[key] = diccionario[key];
           contador++;
 
@@ -425,6 +427,8 @@ function obtenerLibrosPorCategoria(categoria, diccionario) {
 
     if (ruta === "inicio") {
         return filtroImgInicio(filtrado);
+    } else if (ruta === "buscador") {
+        return filtroImgBuscador(filtrado);
     }
     
     return filtrado;
@@ -442,8 +446,23 @@ function filtroImgInicio(diccionario) {
     return filtrado;
 }
 
+function filtroImgBuscador(diccionario) {
+    const filtrado = {};
+
+    for (const key in diccionario) {
+        if (diccionario.hasOwnProperty(key)) {
+            filtrado[key] = diccionario[key].replace('..', '../..');
+        }
+    }
+
+    return filtrado;
+}
+
 
 // Ejecuciones
+
+console.log(document.getElementById('Accion'));
+
 switch (verificacion = verificadorDeRuta()) {
     case "inicio":
         categorias = obtenerElementosDeCategoria()
@@ -462,8 +481,21 @@ switch (verificacion = verificadorDeRuta()) {
         break;
 
     case "buscador":
-        categorias = obtenerElementosDeCategoria()
+        categorias = obtenerElementosDeCategoria();
+        for (const key in categorias) {
+            libros = obtenerLibrosPorCategoria(categoria[key], rutasImg)
+            for (const keyLibros in libros) {
+                if (Object.hasOwnProperty.call(libros, keyLibros)) {
+                    libroTitulo = obtenerTitulo(keyLibros)
+                    libroImagen = libros[keyLibros]
+                    libroSinopsis = sinopsis[keyLibros]
+                    indiceCategoria = obtenerElementoCategoria(categorias, categoria[key])
+                    libroCategoria = categorias[indiceCategoria]
 
+                    libroBuscador(libroImagen, libroTitulo, libroSinopsis, libroCategoria)
+                }
+            }
+        }
         break;
 
     case "categoria":
