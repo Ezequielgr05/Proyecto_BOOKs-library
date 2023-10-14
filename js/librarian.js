@@ -89,8 +89,6 @@ rutas = {
     'Sanctum': '../pdfs/Terror/Sanctum.pdf'
 }
 
-
-
 function obtenerRuta(key) {
     let rutaSinFiltrar = imgBook[key].getAttribute("src");
     let partesRuta = rutaSinFiltrar.split("/");
@@ -138,6 +136,7 @@ function obtenerDireccionRelativa() {
 
     return `../${rutaFinal}`;
 }
+
 
 for (var i = 0; i < btnLeer.length; i++) {
     ((i) => {
@@ -200,3 +199,18 @@ for (var i = 0; i < btnLeer.length; i++) {
         });
     })(i);
 }
+
+document.addEventListener("click", function(event) {
+    if (event.target.classList.contains("terminoDeLeer")) {
+        const tituloLeyendoLibro = Array.from(document.querySelectorAll(".tituloLeyendo"))
+        matrizDeLibros = JSON.parse(localStorage.getItem("librosLeyendo"))
+
+        const componenteRelacionado = event.target.getAttribute('data-componente');
+        const tituloAEliminarLibro = tituloLeyendoLibro[componenteRelacionado].innerHTML
+        
+        matrizDeLibros = matrizDeLibros.filter(libro => libro[1] !== tituloAEliminarLibro);
+        localStorage.setItem("librosLeyendo", JSON.stringify(matrizDeLibros));
+        
+        location.reload();
+    }
+});
