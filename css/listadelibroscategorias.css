@@ -159,63 +159,60 @@ body {
   }
   /* Responsive */
 @media screen and (max-width: 1440px) {
-  .rectangulo-azul {
-    
+.rectangulo-azul {
   }
 }
 
 @media screen and (max-width: 1368px) and (max-height: 1024px) {
-  .rectangulo-azul {
-    
+.rectangulo-azul {
   }
 }
 
 @media screen and (max-width: 1368px) and (max-height: 912px) {
-  .rectangulo-azul {
-    
+.rectangulo-azul {
   }
 }
 
 @media screen and (max-width: 1366px) and (max-height: 768px) {
-  .rectangulo-azul {
+.rectangulo-azul {
   }
 }
 
 @media screen and (max-width: 1322px) and (max-height: 658px) {
-  .rectangulo-azul {
+.rectangulo-azul {
   }
 }
 
 @media screen and (max-width: 1280px) and (max-height: 800px) {
-  .rectangulo-azul {
+.rectangulo-azul {
   }
 }
 
 @media screen and (max-width: 1138px) and (max-height: 712px) {
-  .rectangulo-azul {
+.rectangulo-azul {
   }
 }
 
 @media screen and (max-width: 1024px) and (max-height: 1366px) {
-  .rectangulo-nombre {
+.rectangulo-nombre {
     left: 20%;
   }
 
-  .rectangulo-azul {
+.rectangulo-azul {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 1024px) and (max-height: 768px) {
-  .rectangulo-nombre {
+.rectangulo-nombre {
     left: 20%;
     top: 11%;
   }
 
-  .rectangulo-azul {
+.rectangulo-azul {
     width: 80%;
   }
-  .rectangulo-azul2 {
+.rectangulo-azul2 {
     width: 80%;
   }
 }
