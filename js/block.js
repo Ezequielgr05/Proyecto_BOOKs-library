@@ -15,10 +15,14 @@ function verificarOrientacion() {
     else {
     setTimeout(() => {
       window.location.href = "/inicio.html";
-    }, 2000);
+    }, 1500);
     }
   }
-  
+  else {
+    setTimeout(() => {
+      window.location.href = "/inicio.html";
+    }, 1500);
+    }
 }
 
 verificarOrientacion();

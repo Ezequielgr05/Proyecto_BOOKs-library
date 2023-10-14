@@ -343,7 +343,7 @@ function verificadorDeRuta() {
     if (rutaActual.includes("buscador")) {
         return "buscador"
     }
-    else if (rutaActual.includes("inicio") || rutaActual.includes("Proyecto")) {
+    else if (rutaActual.includes("inicio")) {
         return "inicio"
     }
     else if (rutaActual.includes(categoria[key])) {
