@@ -316,37 +316,6 @@ function libroBuscador(rutaDeImagen, titulo, sinopsis, categoria) {
     categoria.appendChild(libroElemento)
 }
 
-function libroRecomendados(elementoPadre, rutasDeImagen) {
-    recomendados = document.createElement("div")
-    recomendados.classList.add("top")
-    recomendados.classList.add("mt-5")
-    recomendados.innerHTML = `
-    <div class="centrar-en-medio">
-        <div class="rectangulo-nombre">Recomendados</div>
-    </div>
-    <div class="center mt-2">
-        <div class="rectangulo-azul">
-            <img class="imagen imgBTN" src="${rutasDeImagen[0]}" alt="Portada">
-            <img class="imagen imgBTN" src="${rutasDeImagen[1]}" alt="Portada">
-            <img class="imagen imgBTN" src="${rutasDeImagen[2]}" alt="Portada">
-            <img class="imagen imgBTN" src="${rutasDeImagen[3]}" alt="Portada">
-            <img class="imagen imgBTN" src="${rutasDeImagen[4]}" alt="Portada">
-            <button class="boton1 leerBTN">Leer</button>
-            <button class="boton2 info">+ Info</button>
-            <button class="boton3 leerBTN">Leer</button>
-            <button class="boton4 info">+ Info</button>
-            <button class="boton5 leerBTN">Leer</button>
-            <button class="boton6 info">+ Info</button>
-            <button class="boton7 leerBTN">Leer</button>
-            <button class="boton8 info">+ Info</button>
-            <button class="boton9 leerBTN">Leer</button>
-            <button class="boton10 info">+ Info</button>
-        </div>
-    </div>
-    `
-    elementoPadre.appendChild(recomendados)
-}
-
 // adicionales
 function obtenerTitulo(text) {
     return text.replace(/([A-Z])/g, ' $1').replace(/^\s/, '').toLowerCase().replace(/^.|\s\S/g, (char) => char.toUpperCase());
@@ -460,9 +429,6 @@ function filtroImgBuscador(diccionario) {
 
 
 // Ejecuciones
-
-console.log(document.getElementById('Accion'));
-
 switch (verificacion = verificadorDeRuta()) {
     case "inicio":
         categorias = obtenerElementosDeCategoria()
