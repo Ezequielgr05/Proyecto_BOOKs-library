@@ -16,7 +16,7 @@ function verificarOrientacion() {
   else {
     setTimeout(() => {
       window.location.href = "/inicio.html";
-    }, 1000);
+    }, 2000);
   }
 }
 
