@@ -42,11 +42,11 @@ libros = {
     'MiPersonaFavorita': 'La continuación de la historia de amor entre los dos chicos mientras enfrentan nuevos desafíos y profundizan su relación.',
     'UnChicoConoceAOtro': 'Un nuevo comienzo en la relación de los dos chicos mientras enfrentan los altibajos de la vida y el amor.',
     'UnPasoAdelante': 'Los personajes siguen creciendo y aprendiendo mientras enfrentan cambios en sus vidas y relaciones.',
-    'LIBRO1-CANCIONDEHIELOYFUEGO': 'El primer libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que presenta un mundo de intriga política, traición y batallas en Westeros.',
-    'LIBRO2-CHOQUEDEREYES': 'El segundo libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, donde continúan las luchas por el poder en Westeros y se desatan nuevas intrigas y traiciones.',
-    'LIBRO3-TORMENTADEESPADASI': 'La tercera entrega de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que presenta batallas, traiciones y desafíos en un mundo lleno de personajes memorables.',
-    'LIBRO4-TORMENTADEESPADASII': 'La cuarta parte de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que narra las consecuencias de las luchas por el trono de hierro y los peligros que acechan a Westeros.',
-    'LIBRO5-DANZADEDRAGONES': 'El quinto libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que continúa las historias entrelazadas de personajes en un mundo lleno de giros y sorpresas.',
+    'CancionDeHieloYFuego': 'El primer libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que presenta un mundo de intriga política, traición y batallas en Westeros.',
+    'ChocqueDeReyes': 'El segundo libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, donde continúan las luchas por el poder en Westeros y se desatan nuevas intrigas y traiciones.',
+    'TormentaDeEspadasI': 'La tercera entrega de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que presenta batallas, traiciones y desafíos en un mundo lleno de personajes memorables.',
+    'TormentaDeEspadasII': 'La cuarta parte de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que narra las consecuencias de las luchas por el trono de hierro y los peligros que acechan a Westeros.',
+    'DanzaDeDragones': 'El quinto libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que continúa las historias entrelazadas de personajes en un mundo lleno de giros y sorpresas.',
     'ElDiaQueSePerdioElAmor': 'Un misterio apasionante que sigue a un detective en su búsqueda de respuestas en un caso de asesinato que se complica con secretos y traiciones.',
     'ElDiaQueSePerdioLaCordura': 'Una historia llena de suspense que sigue a un psiquiatra que se ve envuelto en un juego mortal de manipulación mental y misterio.',
     'ElJuegoDelAlma': 'Un thriller psicológico que sigue a un psicólogo que se enfrenta a un enigmático paciente y descubre oscuros secretos sobre su propia vida.',
@@ -118,8 +118,8 @@ for (let i = 0; i < info.length; i++) {
         info[i].addEventListener("click", () => {
             info[i].id = "info"
             datos = filtrarRuta(i)
-            sinopsis = libros[datos]
-            mostrar(sinopsis)
+            sinopsisInfo = libros[datos]
+            mostrar(sinopsisInfo)
         })
     })(i)
 }
