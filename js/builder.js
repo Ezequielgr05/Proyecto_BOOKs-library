@@ -275,7 +275,7 @@ const categoria = {
 
 // Funciones
 
-// creadores
+// creador de componentes
 function libroInicio(rutaDeImagen, titulo, categoria) {
     libroElemento = document.createElement("li")
     libroElemento.classList.add("slide-visible")
@@ -290,6 +290,22 @@ function libroInicio(rutaDeImagen, titulo, categoria) {
         </div>
     `
     categoria.appendChild(libroElemento)
+}
+
+function libroInicioLeyendo(rutaDeImagen, titulo, contenedor) {
+    libroElemento = document.createElement("li")
+    libroElemento.classList.add("slide-visible")
+    libroElemento.innerHTML = `
+        <div class="book">
+            <img src="${rutaDeImagen}" alt="portada de "${titulo}" " class="imgBook imgBTN">
+            <div class="sectionBook abierto">
+                <h3 class="titleBookTN titleBookT">${titulo}</h3>
+                <button class="btnBook terminoDeLeer">Terminado</button>
+                <button class="btnBook btnLeer leerBTN">leer</button>
+            </div>
+        </div>
+    `
+    contenedor.appendChild(libroElemento)
 }
 
 function libroBuscador(rutaDeImagen, titulo, sinopsis, categoria) {
@@ -427,11 +443,22 @@ function filtroImgBuscador(diccionario) {
     return filtrado;
 }
 
+function filtroDeRutas(ruta) {
+    if (ruta.includes("../../")) {
+        ruta = ruta.replace("../../", "/");
+    }
+    else if (ruta.includes("../")) {
+        ruta = ruta.replace("../", "/");
+    } 
+    else if (ruta.includes("./")) {
+        ruta = ruta.replace("./", "/");
+    }
+    return ruta;
+}
 
-// Ejecuciones
-switch (verificacion = verificadorDeRuta()) {
-    case "inicio":
-        categorias = obtenerElementosDeCategoria()
+// Creadores
+function inicio() {
+    categorias = obtenerElementosDeCategoria()
         for (const key in categoria) {
             libros = obtenerLibrosPorCategoria(categoria[key], rutasImg)
             for (const keyLibro in libros) {
@@ -444,10 +471,10 @@ switch (verificacion = verificadorDeRuta()) {
             }
 
         }
-        break;
+}
 
-    case "buscador":
-        categorias = obtenerElementosDeCategoria();
+function buscador() {
+    categorias = obtenerElementosDeCategoria();
         for (const key in categorias) {
             libros = obtenerLibrosPorCategoria(categoria[key], rutasImg)
             for (const keyLibros in libros) {
@@ -462,6 +489,34 @@ switch (verificacion = verificadorDeRuta()) {
                 }
             }
         }
+}
+
+function inicioLeyendo() {
+    const matrizLeyendo = JSON.parse(localStorage.getItem("librosLeyendo"))
+    let contenedorLeyendo = document.querySelector("#leyendo")
+    let contenedorDeItems = document.querySelector("#volveraleer")
+
+    if (matrizLeyendo.length > 0) {
+        contenedorLeyendo.classList.remove("d-none")
+
+        for (let i = 0; i < matrizLeyendo.length; i++) {
+            libroTitulo = matrizLeyendo[i][1]
+            libroImagen = filtroDeRutas(matrizLeyendo[i][2])
+
+            libroInicioLeyendo(libroImagen, libroTitulo, contenedorDeItems)
+        }
+    }
+}
+
+// Ejecuciones
+switch (verificacion = verificadorDeRuta()) {
+    case "inicio":
+        inicioLeyendo()
+        inicio()
+        break;
+
+    case "buscador":
+        buscador()
         break;
 
     case "categoria":
