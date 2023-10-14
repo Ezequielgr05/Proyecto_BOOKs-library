@@ -341,37 +341,37 @@ function libroCategoria(rutaDeImagen, categoria, padre) {
         <div class="center">
             <div class="rectangulo-azul">
                 <div class="rectangulo-nombre">${categoria}</div>
-                <img class="imagen1" src="${rutaDeImagen[0]}" alt="Portada">
-                <img class="imagen2" src="${rutaDeImagen[1]}" alt="Portada">
-                <img class="imagen3" src="${rutaDeImagen[2]}" alt="Portada">
-                <img class="imagen4" src="${rutaDeImagen[3]}" alt="Portada">
-                <img class="imagen5" src="${rutaDeImagen[4]}" alt="Portada">
-                <button class="boton1">Leer</button>
-                <button class="boton2">+ Info</button>
-                <button class="boton3">Leer</button>
-                <button class="boton4">+ Info</button>
-                <button class="boton5">Leer</button>
-                <button class="boton6">+ Info</button>
-                <button class="boton7">Leer</button>
-                <button class="boton8">+ Info</button>
-                <button class="boton9">Leer</button>
-                <button class="boton10">+ Info</button>
+                <img class="imagen1 imgBTN imgBTNInfo" src="${rutaDeImagen[0]}" alt="Portada">
+                <img class="imagen2 imgBTN imgBTNInfo" src="${rutaDeImagen[1]}" alt="Portada">
+                <img class="imagen3 imgBTN imgBTNInfo" src="${rutaDeImagen[2]}" alt="Portada">
+                <img class="imagen4 imgBTN imgBTNInfo" src="${rutaDeImagen[3]}" alt="Portada">
+                <img class="imagen5 imgBTN imgBTNInfo" src="${rutaDeImagen[4]}" alt="Portada">
+                <button class="boton1 leerBTN">Leer</button>
+                <button class="boton2 info">+ Info</button>
+                <button class="boton3 leerBTN">Leer</button>
+                <button class="boton4 info">+ Info</button>
+                <button class="boton5 leerBTN">Leer</button>
+                <button class="boton6 info">+ Info</button>
+                <button class="boton7 leerBTN">Leer</button>
+                <button class="boton8 info">+ Info</button>
+                <button class="boton9 leerBTN">Leer</button>
+                <button class="boton10 info">+ Info</button>
                 <div class="rectangulo-azul2">
-                <img class="imagen1" src="${rutaDeImagen[5]}" alt="Portada">
-                <img class="imagen2" src="${rutaDeImagen[6]}" alt="Portada">
-                <img class="imagen3" src="${rutaDeImagen[7]}" alt="Portada">
-                <img class="imagen4" src="${rutaDeImagen[8]}" alt="Portada">
-                <img class="imagen5" src="${rutaDeImagen[9]}" alt="Portada">
-                <button class="boton1">Leer</button>
-                <button class="boton2">+ Info</button>
-                <button class="boton3">Leer</button>
-                <button class="boton4">+ Info</button>
-                <button class="boton5">Leer</button>
-                <button class="boton6">+ Info</button>
-                <button class="boton7">Leer</button>
-                <button class="boton8">+ Info</button>
-                <button class="boton9">Leer</button>
-                <button class="boton10">+ Info</button>
+                <img class="imagen1 imgBTN imgBTNInfo" src="${rutaDeImagen[5]}" alt="Portada">
+                <img class="imagen2 imgBTN imgBTNInfo" src="${rutaDeImagen[6]}" alt="Portada">
+                <img class="imagen3 imgBTN imgBTNInfo" src="${rutaDeImagen[7]}" alt="Portada">
+                <img class="imagen4 imgBTN imgBTNInfo" src="${rutaDeImagen[8]}" alt="Portada">
+                <img class="imagen5 imgBTN imgBTNInfo" src="${rutaDeImagen[9]}" alt="Portada">
+                <button class="boton1 leerBTN">Leer</button>
+                <button class="boton2 info">+ Info</button>
+                <button class="boton3 leerBTN">Leer</button>
+                <button class="boton4 info">+ Info</button>
+                <button class="boton5 leerBTN">Leer</button>
+                <button class="boton6 info">+ Info</button>
+                <button class="boton7 leerBTN">Leer</button>
+                <button class="boton8 info">+ Info</button>
+                <button class="boton9 leerBTN">Leer</button>
+                <button class="boton10 info">+ Info</button>
                 </div>
             </div>
         </div>
