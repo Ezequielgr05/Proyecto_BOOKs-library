@@ -279,7 +279,6 @@ const categoria = {
 function libroInicio(rutaDeImagen, titulo, categoria) {
     libroElemento = document.createElement("li")
     libroElemento.classList.add("slide-visible")
-    libroElemento.id = "lol"
     libroElemento.innerHTML = `
         <div class="book">
             <img src="${rutaDeImagen}" alt="portada de "${titulo}" " class="imgBook imgBTN">
@@ -350,11 +349,7 @@ function libroRecomendados(elementoPadre, rutasDeImagen) {
 
 // adicionales
 function obtenerTitulo(text) {
-    fraseSeparada = text.replace(/([A-Z])/g, ' $1');
-    letraCapital = fraseSeparada[1]
-    fraseSinPrimerLetra = fraseSeparada.substring(2).toLowerCase()
-    fraseFinal = `${letraCapital}${fraseSinPrimerLetra}`
-    return fraseFinal
+    return text.replace(/([A-Z])/g, ' $1').replace(/^\s/, '').toLowerCase().replace(/^.|\s\S/g, (char) => char.toUpperCase());
 }
 
 function verificadorDeRuta() {
@@ -392,7 +387,7 @@ function obtenerElementoCategoria(array, categoria) {
       }
     }
     return -1;
-  }
+}
 
 function verificadorCategoria() {
     rutaActual = window.location.href
@@ -414,17 +409,39 @@ function obtenerCategoria(ruta) {
 
 function obtenerLibrosPorCategoria(categoria, diccionario) {
     const filtrado = {};
-  
+    let contador = 0;
+    const ruta = verificadorDeRuta();
+
     for (const key in diccionario) {
-      if (diccionario.hasOwnProperty(key)) {
-        if (diccionario[key].includes(categoria)) {
+      if (diccionario.hasOwnProperty(key) && diccionario[key].includes(categoria)) {
           filtrado[key] = diccionario[key];
-        }
+          contador++;
+
+          if (contador >= 5 && ruta === "inicio") {
+            break;
+          }
       }
     }
+
+    if (ruta === "inicio") {
+        return filtroImgInicio(filtrado);
+    }
+    
     return filtrado;
 }
   
+function filtroImgInicio(diccionario) {
+    const filtrado = {};
+
+    for (const key in diccionario) {
+        if (diccionario.hasOwnProperty(key)) {
+            filtrado[key] = diccionario[key].replace('..', '');
+        }
+    }
+
+    return filtrado;
+}
+
 
 // Ejecuciones
 switch (verificacion = verificadorDeRuta()) {
@@ -437,8 +454,6 @@ switch (verificacion = verificadorDeRuta()) {
                 libroImagen = libros[keyLibro]
                 indiceCategoria = obtenerElementoCategoria(categorias, categoria[key])
                 libroCategoria = categorias[indiceCategoria]
-                
-                console.log(libroCategoria)
 
                 libroInicio(libroImagen, libroTitulo, libroCategoria)
             }
