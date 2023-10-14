@@ -292,15 +292,15 @@ function libroInicio(rutaDeImagen, titulo, categoria) {
     categoria.appendChild(libroElemento)
 }
 
-function libroInicioLeyendo(rutaDeImagen, titulo, contenedor) {
+function libroInicioLeyendo(rutaDeImagen, titulo, id, contenedor) {
     libroElemento = document.createElement("li")
     libroElemento.classList.add("slide-visible")
     libroElemento.innerHTML = `
-        <div class="book">
+        <div class="book" id="${id}">
             <img src="${rutaDeImagen}" alt="portada de "${titulo}" " class="imgBook imgBTN">
             <div class="sectionBook abierto">
-                <h3 class="titleBookTN titleBookT">${titulo}</h3>
-                <button class="btnBook terminoDeLeer">Terminado</button>
+                <h3 class="titleBookTN titleBookT tituloLeyendo">${titulo}</h3>
+                <button class="btnBook terminoDeLeer" data-componente="${id}">Terminado</button>
                 <button class="btnBook btnLeer leerBTN">leer</button>
             </div>
         </div>
@@ -343,7 +343,7 @@ function verificadorDeRuta() {
     if (rutaActual.includes("buscador")) {
         return "buscador"
     }
-    else if (rutaActual.includes("index") || rutaActual.includes("Proyecto")) {
+    else if (rutaActual.includes("inicio")) {
         return "inicio"
     }
     else if (rutaActual.includes(categoria[key])) {
@@ -503,7 +503,7 @@ function inicioLeyendo() {
             libroTitulo = matrizLeyendo[i][1]
             libroImagen = filtroDeRutas(matrizLeyendo[i][2])
 
-            libroInicioLeyendo(libroImagen, libroTitulo, contenedorDeItems)
+            libroInicioLeyendo(libroImagen, libroTitulo, i, contenedorDeItems)
         }
     }
 }
