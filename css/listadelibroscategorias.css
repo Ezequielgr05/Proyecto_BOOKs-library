@@ -160,43 +160,39 @@ body {
   /* Responsive */
 @media screen and (max-width: 1440px) {
   .rectangulo-azul {
-    top: 47%;
+    
   }
 }
 
 @media screen and (max-width: 1368px) and (max-height: 1024px) {
   .rectangulo-azul {
-    top: 40%;
+    
   }
 }
 
 @media screen and (max-width: 1368px) and (max-height: 912px) {
   .rectangulo-azul {
-    top: 43%;
+    
   }
 }
 
 @media screen and (max-width: 1366px) and (max-height: 768px) {
   .rectangulo-azul {
-    top: 49%;
   }
 }
 
 @media screen and (max-width: 1322px) and (max-height: 658px) {
   .rectangulo-azul {
-    top: 55%;
   }
 }
 
 @media screen and (max-width: 1280px) and (max-height: 800px) {
   .rectangulo-azul {
-    top: 47%;
   }
 }
 
 @media screen and (max-width: 1138px) and (max-height: 712px) {
   .rectangulo-azul {
-    top: 52%;
   }
 }
 
@@ -206,7 +202,6 @@ body {
   }
 
   .rectangulo-azul {
-    top: 32%;
     width: 80%;
   }
 }
@@ -218,7 +213,9 @@ body {
   }
 
   .rectangulo-azul {
-    top: 60%;
+    width: 80%;
+  }
+  .rectangulo-azul2 {
     width: 80%;
   }
 }
@@ -229,7 +226,9 @@ body {
   }
 
   .rectangulo-azul {
-    top: 70%;
+    width: 80%;
+  }
+  .rectangulo-azul2 {
     width: 80%;
   }
 }
@@ -240,7 +239,9 @@ body {
   }
 
   .rectangulo-azul {
-    top: 32%;
+    width: 80%;
+  }
+  .rectangulo-azul2 {
     width: 80%;
   }
 }
@@ -251,7 +252,10 @@ body {
   }
 
   .rectangulo-azul {
-    top: 33%;
+    width: 80%;
+    height: 320px;
+  }
+  .rectangulo-azul2 {
     width: 80%;
     height: 320px;
   }
@@ -338,7 +342,12 @@ body {
   }
 
   .rectangulo-azul {
-    top: 30%;
+    
+    width: 80%;
+    height: 320px;
+  }
+  .rectangulo-azul2 {
+    
     width: 80%;
     height: 320px;
   }
@@ -347,6 +356,7 @@ body {
     width: 130px;
     height: 240px;
   }
+  
 
   .boton1,
   .boton2,
@@ -427,6 +437,10 @@ body {
     }
 
   .rectangulo-azul {
+    width: 80%;
+    height: 320px;
+  }
+  .rectangulo-azul2 {
     width: 80%;
     height: 320px;
   }

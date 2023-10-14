@@ -17,7 +17,7 @@ body {
 
 .rectangulo-nombre {
   width: 450px;
-  height: 75px;
+  height: 65px;
   position: relative; 
   top: -46%;
   left: 16.5%;
@@ -36,7 +36,7 @@ body {
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  bottom: -55;
+  bottom: -15%;
   z-index: 2;
   width: 900px;
   height: 365px;
