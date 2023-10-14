@@ -164,6 +164,10 @@ body {
 }
 
 @media screen and (max-width: 1366px) and (max-height: 768px) {
+  .rectangulo-nombre {
+    top: -28%;
+  }
+
   .rectangulo-azul {
     top: 49%;
   }
