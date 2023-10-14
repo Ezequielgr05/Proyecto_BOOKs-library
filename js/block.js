@@ -13,6 +13,11 @@ function verificarOrientacion() {
       document.body.appendChild(advertencia);
     }
   }
+  else {
+    setTimeout(() => {
+      window.location.href = "/inicio.html";
+    }, 1000);
+  }
 }
 
 verificarOrientacion();
