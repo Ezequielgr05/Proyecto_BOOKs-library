@@ -1,5 +1,5 @@
 info = Array.from(document.querySelectorAll(".info"))
-imgBook = Array.from(document.querySelectorAll(".imgBTN"))
+imgBookInfo = Array.from(document.querySelectorAll(".imgBTNInfo"))
 extension = [".jfif", ".jpg", ".jpeg", ".png"]
 
 libros = {
@@ -91,7 +91,7 @@ libros = {
 }
 
 function filtrarRuta(iterable) {
-    let rutaSinFiltrar = imgBook[iterable].getAttribute("src");
+    let rutaSinFiltrar = imgBookInfo[iterable].getAttribute("src");
     let partesRuta = rutaSinFiltrar.split("/");
     let nombreArchivo = partesRuta[partesRuta.length - 1]
     
@@ -118,6 +118,7 @@ for (let i = 0; i < info.length; i++) {
         info[i].addEventListener("click", () => {
             info[i].id = "info"
             datos = filtrarRuta(i)
+            console.log(i)
             sinopsisInfo = libros[datos]
             mostrar(sinopsisInfo)
         })

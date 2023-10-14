@@ -61,7 +61,7 @@ rutas = {
     'ElHuesped': '../pdfs/Novelas/ElHuesped.pdf',
     'ElPrincipito': '../pdfs/Novelas/ElPrincipito.pdf',
     'ElVizcondeDeBragelonne': '../pdfs/Novelas/ElVizcondeDeBragelonne.pdf',
-    'LaCasadelosespiritus': '../pdfs/Novelas/LaCasadelosespiritus.pdf',
+    'LaCasaDeLosEspiritus': '../pdfs/Novelas/LaCasadelosespiritus.pdf',
     'LaDamaDeLasCamelias': '../pdfs/Novelas/LaDamaDeLasCamelias.pdf',
     'LazarilloDeTormes': '../pdfs/Novelas/LazarilloDeTormes.pdf',
     'MilYUnaNoches': '../pdfs/Novelas/MilYUnaNoches.pdf',
@@ -121,11 +121,7 @@ function irAlLector(){
 }
 
 function tituloDelLibro(text) {
-    fraseSeparada = text.replace(/([A-Z])/g, ' $1');
-    letraCapital = fraseSeparada[1]
-    fraseSinPrimerLetra = fraseSeparada.substring(2).toLowerCase()
-    fraseFinal = `${letraCapital}${fraseSinPrimerLetra}`
-    return fraseFinal
+    return text.replace(/([A-Z])/g, ' $1').replace(/^\s/, '').toLowerCase().replace(/^.|\s\S/g, (char) => char.toUpperCase());
 }
 
 function obtenerDireccionRelativa() {

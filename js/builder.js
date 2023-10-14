@@ -281,7 +281,7 @@ function libroInicio(rutaDeImagen, titulo, categoria) {
     libroElemento.classList.add("slide-visible")
     libroElemento.innerHTML = `
         <div class="book">
-            <img src="${rutaDeImagen}" alt="portada de "${titulo}" " class="imgBook imgBTN">
+            <img src="${rutaDeImagen}" alt="portada de "${titulo}" " class="imgBook imgBTN imgBTNInfo">
             <div class="sectionBook abierto">
                 <h3 class="titleBookTN titleBookT">${titulo}</h3>
                 <button class="btnBook btnInfo info">+ informacion</button>
@@ -567,15 +567,16 @@ function inicioLeyendo() {
     const matrizLeyendo = JSON.parse(localStorage.getItem("librosLeyendo"))
     let contenedorLeyendo = document.querySelector("#leyendo")
     let contenedorDeItems = document.querySelector("#volveraleer")
+    if (matrizLeyendo) {
+        if (matrizLeyendo.length > 0) {
+            contenedorLeyendo.classList.remove("d-none")
 
-    if (matrizLeyendo.length > 0) {
-        contenedorLeyendo.classList.remove("d-none")
+            for (let i = 0; i < matrizLeyendo.length; i++) {
+                libroTitulo = matrizLeyendo[i][1]
+                libroImagen = filtroDeRutas(matrizLeyendo[i][2])
 
-        for (let i = 0; i < matrizLeyendo.length; i++) {
-            libroTitulo = matrizLeyendo[i][1]
-            libroImagen = filtroDeRutas(matrizLeyendo[i][2])
-
-            libroInicioLeyendo(libroImagen, libroTitulo, i, contenedorDeItems)
+                libroInicioLeyendo(libroImagen, libroTitulo, i, contenedorDeItems)
+            }
         }
     }
 }
