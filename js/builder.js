@@ -332,6 +332,53 @@ function libroBuscador(rutaDeImagen, titulo, sinopsis, categoria) {
     categoria.appendChild(libroElemento)
 }
 
+function libroCategoria(rutaDeImagen, categoria, padre) {
+    div = document.createElement("div")
+    div.innerHTML = `
+        <div class="top">
+            <div class="centrar-en-medio">
+        </div>
+        <div class="center">
+            <div class="rectangulo-azul">
+                <div class="rectangulo-nombre">${categoria}</div>
+                <img class="imagen1" src="${rutaDeImagen[0]}" alt="Portada">
+                <img class="imagen2" src="${rutaDeImagen[1]}" alt="Portada">
+                <img class="imagen3" src="${rutaDeImagen[2]}" alt="Portada">
+                <img class="imagen4" src="${rutaDeImagen[3]}" alt="Portada">
+                <img class="imagen5" src="${rutaDeImagen[4]}" alt="Portada">
+                <button class="boton1">Leer</button>
+                <button class="boton2">+ Info</button>
+                <button class="boton3">Leer</button>
+                <button class="boton4">+ Info</button>
+                <button class="boton5">Leer</button>
+                <button class="boton6">+ Info</button>
+                <button class="boton7">Leer</button>
+                <button class="boton8">+ Info</button>
+                <button class="boton9">Leer</button>
+                <button class="boton10">+ Info</button>
+                <div class="rectangulo-azul2">
+                <img class="imagen1" src="${rutaDeImagen[5]}" alt="Portada">
+                <img class="imagen2" src="${rutaDeImagen[6]}" alt="Portada">
+                <img class="imagen3" src="${rutaDeImagen[7]}" alt="Portada">
+                <img class="imagen4" src="${rutaDeImagen[8]}" alt="Portada">
+                <img class="imagen5" src="${rutaDeImagen[9]}" alt="Portada">
+                <button class="boton1">Leer</button>
+                <button class="boton2">+ Info</button>
+                <button class="boton3">Leer</button>
+                <button class="boton4">+ Info</button>
+                <button class="boton5">Leer</button>
+                <button class="boton6">+ Info</button>
+                <button class="boton7">Leer</button>
+                <button class="boton8">+ Info</button>
+                <button class="boton9">Leer</button>
+                <button class="boton10">+ Info</button>
+                </div>
+            </div>
+        </div>
+    `
+    padre.appendChild(div)
+}
+
 // adicionales
 function obtenerTitulo(text) {
     return text.replace(/([A-Z])/g, ' $1').replace(/^\s/, '').toLowerCase().replace(/^.|\s\S/g, (char) => char.toUpperCase());
@@ -346,8 +393,12 @@ function verificadorDeRuta() {
     else if (rutaActual.includes("inicio")) {
         return "inicio"
     }
-    else if (rutaActual.includes(categoria[key])) {
-        return "categoria"
+    else {
+        for (const key in categoria) {
+            if (rutaActual.includes(categoria[key])) {
+            return "categoria"
+            }
+        }
     }
 }
 
@@ -456,6 +507,27 @@ function filtroDeRutas(ruta) {
     return ruta;
 }
 
+function filtroParaCategorias(array) {
+    arrayFiltrado = []
+
+    for (let i = 0; i < array.length; i++) {
+        arrayFiltrado.push(array[i].replace('../', '../../'))
+    }
+
+    return arrayFiltrado
+}
+
+function obtenerArrayDeImagenes(categoria) {
+    arrayDeImagenes = []
+    objetoDeImagenes = obtenerLibrosPorCategoria(categoria, rutasImg)
+
+    for (const key in objetoDeImagenes) {
+        arrayDeImagenes.push(objetoDeImagenes[key])
+    }
+
+    return arrayDeImagenes
+}
+
 // Creadores
 function inicio() {
     categorias = obtenerElementosDeCategoria()
@@ -508,6 +580,14 @@ function inicioLeyendo() {
     }
 }
 
+function categorias() {
+    enQuePadre = document.querySelector("main")
+    enQueCategoria = verificadorCategoria()
+    queLibrosPoner = filtroParaCategorias(obtenerArrayDeImagenes(enQueCategoria))
+    
+    libroCategoria(queLibrosPoner, enQueCategoria, enQuePadre)
+}
+
 // Ejecuciones
 switch (verificacion = verificadorDeRuta()) {
     case "inicio":
@@ -520,7 +600,7 @@ switch (verificacion = verificadorDeRuta()) {
         break;
 
     case "categoria":
-
+        categorias()
         break;
 
     default:
