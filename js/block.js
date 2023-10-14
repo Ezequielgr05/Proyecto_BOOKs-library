@@ -12,12 +12,13 @@ function verificarOrientacion() {
       advertencia.classList.add("advertencia");
       document.body.appendChild(advertencia);
     }
-  }
-  else {
+    else {
     setTimeout(() => {
       window.location.href = "/inicio.html";
     }, 2000);
+    }
   }
+  
 }
 
 verificarOrientacion();
