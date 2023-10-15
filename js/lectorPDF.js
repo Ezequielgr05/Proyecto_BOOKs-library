@@ -126,22 +126,3 @@ document.body.addEventListener("click", function (event) {
   }
 });
 
-
-// botonTerminado.addEventListener("click", () => {
-//   id = botonTerminado.getAttribute("data-id");
-//   botonOriginal = botones[id];
-//   tituloAEliminar = botonOriginal.textContent;
-
-//   if (matrizDeLibros.length === 1) {
-//     // Si es el último libro en la lista, eliminarlo y redirigir a la página de inicio
-//     matrizDeLibros = matrizDeLibros.filter(libro => libro[1] !== tituloAEliminar);
-//     localStorage.setItem("librosLeyendo", JSON.stringify(matrizDeLibros));
-//     window.location.href = "/index.html";
-//   } else {
-//     // Si hay más libros en la lista, simplemente eliminar el libro
-//     matrizDeLibros = matrizDeLibros.filter(libro => libro[1] !== tituloAEliminar);
-//     localStorage.setItem("librosLeyendo", JSON.stringify(matrizDeLibros));
-//     location.reload();
-//   }
-// });
-
