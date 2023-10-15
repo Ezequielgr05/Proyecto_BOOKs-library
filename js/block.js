@@ -14,13 +14,21 @@ function verificarOrientacion() {
     }
     else {
     setTimeout(() => {
-      window.location.href = "/inicio.html";
+      if (window.location.href.includes("Proyecto")) {
+        window.location.href = "/Proyecto_BOOKs-library/inicio.html";
+      } else {
+        window.location.href = "/inicio.html";
+      }
     }, 1500);
     }
   }
   else {
     setTimeout(() => {
-      window.location.href = "/inicio.html";
+      if (window.location.href.includes("Proyecto")) {
+        window.location.href = "/Proyecto_BOOKs-library/inicio.html";
+      } else {
+        window.location.href = "/inicio.html";
+      }
     }, 1500);
     }
 }
