@@ -475,7 +475,7 @@ function filtroImgInicio(diccionario) {
 
     for (const key in diccionario) {
         if (diccionario.hasOwnProperty(key)) {
-            filtrado[key] = diccionario[key].replace('..', '');
+            filtrado[key] = diccionario[key].replace('..', '.');
         }
     }
 
@@ -496,14 +496,12 @@ function filtroImgBuscador(diccionario) {
 
 function filtroDeRutas(ruta) {
     if (ruta.includes("../../")) {
-        ruta = ruta.replace("../../", "/");
+        ruta = ruta.replace("../../", "./");
     }
     else if (ruta.includes("../")) {
-        ruta = ruta.replace("../", "/");
+        ruta = ruta.replace("../", "./");
     } 
-    else if (ruta.includes("./")) {
-        ruta = ruta.replace("./", "/");
-    }
+    
     return ruta;
 }
 
@@ -537,9 +535,9 @@ function inicio() {
                 libroTitulo = obtenerTitulo(keyLibro)
                 libroImagen = libros[keyLibro]
                 indiceCategoria = obtenerElementoCategoria(categorias, categoria[key])
-                libroCategoria = categorias[indiceCategoria]
+                librosCategoria = categorias[indiceCategoria]
 
-                libroInicio(libroImagen, libroTitulo, libroCategoria)
+                libroInicio(libroImagen, libroTitulo, librosCategoria)
             }
 
         }
