@@ -283,7 +283,7 @@ function libroInicio(rutaDeImagen, titulo, categoria) {
         <div class="book">
             <img src="${rutaDeImagen}" alt="portada de "${titulo}" " class="imgBook imgBTN imgBTNInfo">
             <div class="sectionBook abierto">
-                <h3 class="titleBookTN titleBookT">${titulo}</h3>
+                <h4 class="titleBookTN titleBookT">${titulo}</h4>
                 <button class="btnBook btnInfo info">+ informacion</button>
                 <button class="btnBook btnLeer leerBTN">leer</button>
             </div>
@@ -501,7 +501,7 @@ function filtroDeRutas(ruta) {
     else if (ruta.includes("../")) {
         ruta = ruta.replace("../", "./");
     } 
-    
+
     return ruta;
 }
 
