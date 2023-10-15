@@ -1,0 +1,50 @@
+.btn-submit, .btn-leer {
+    background-color: #003399;
+    color: #E7FFF9;  
+    transition: 0.2s;
+    font-size: large;
+}
+
+.btn-submit {
+    width: 10%;
+    padding: 10px;
+}
+
+.btn-leer {
+    width: 130px;
+}
+
+.btn-submit:hover, .btn-leer:hover {
+    background-color: #00274e;
+    color: #E7FFF9;
+ }
+
+.btn-submit:active, .btn-leer:active {
+    background-color: #001e3b !important;
+    border: none;
+    color: #E7FFF9 !important;
+}
+
+.buscador {
+    z-index: 100;
+    padding: 15px;
+    font-size: larger;
+}
+
+.list-title {
+    background-color: #003399 !important;
+    text-align: center;
+    color: #E7FFF9;
+    padding: 15px;
+    font-size: larger;
+    border: none;
+}
+
+.list-group-item {
+    background: none;
+}
+
+.imgPortada {
+    width: 160px;
+    height: auto;
+}

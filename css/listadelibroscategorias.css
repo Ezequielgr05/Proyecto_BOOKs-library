@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+body {
+    background-color: #E7FFF9;
+    font-family: 'Nunito Sans', sans-serif; 
+}
+.centrar-en-medio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-size: 36px;
+  }
+  .top {
+    position: relative;
+    margin-top: 450px;
+  }
+  
+  .rectangulo-nombre {
+    width: 450px;
+    height: 65px;
+    position: relative; 
+    top: -9%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background-color: #ffcc00;
+    color: #003366;
+    text-align: center;
+    line-height: 65px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .rectangulo-azul {
+    left: 50%;
+    bottom: 53%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 900px;
+    height: 365px;
+    background-color: #003366;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .rectangulo-azul2 { 
+    left: 50%;
+    top: 148%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 900px;
+    height: 365px;
+    background-color: #003366;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .center {
+    height: 40vh;
+    font-size: 36px;
+  }
+  
+  .imagen1,
+  .imagen2,
+  .imagen3,
+  .imagen4,
+  .imagen5 {
+    position: absolute;
+    bottom: 19%;
+    width: 180px;
+    height: 281px;
+    box-shadow: 13px 0 0 #dfdfdf, 15px 0 0 #c4c4c4;
+    border-radius: 5px;
+    transform: rotateY(-25deg);
+  }
+  .imagen1{
+    left: -9%;
+  }
+  .imagen2 {
+    left: 15%;
+  }
+  .imagen3 {
+    left: 40%;
+    }
+  .imagen4 {
+    left: 64%;
+  }  
+  .imagen5 {
+    left: 88%;
+  }
+  .boton1,
+  .boton2,
+  .boton3,
+  .boton4,
+  .boton5,
+  .boton6,
+  .boton7,
+  .boton8,
+  .boton9,
+  .boton10 {
+    top: 81%;
+    font-family: 'Nunito Sans', sans-serif;
+    bottom: 10px;
+    position: absolute;
+    background-color: #00cc99;
+    color: black;
+    width: 80.18px;
+    height: 57px;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    font-size: 5.5mm;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+  }
+  .boton1 {
+    left: -7.7%;
+  }
+  .boton2 {
+    left: 0.7%;
+  }
+  .boton3 {
+    left: 16.29%;
+  }
+  .boton4 {
+    left: 24.79%;
+  }
+  .boton5 {
+    left: 41.25%;
+  }
+  .boton6 {
+    left: 49.8%;
+  }
+  .boton7 {
+    left: 65.3%;
+  }
+  .boton8 {
+    left: 73.8%;
+  }
+  .boton9 {
+    left: 89.3%;
+  }
+  .boton10 {
+    left: 97.8%;
+  }
+  .boton1:hover,
+  .boton2:hover,
+  .boton3:hover,
+  .boton4:hover,
+  .boton5:hover,
+  .boton6:hover,
+  .boton7:hover,
+  .boton8:hover,
+  .boton9:hover,
+  .boton10:hover {
+    background-color: rgb(2, 97, 65);
+  }
+  /* Responsive */
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
+.rectangulo-nombre {
+    left: 20%;
+  }
+.rectangulo-azul {
+    width: 80%;
+  }
+  .rectangulo-azul2 {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 768px) {
+.rectangulo-nombre {
+    left: 20%;
+    top: 11%;
+  }
+.rectangulo-azul {
+    width: 80%;
+  }
+.rectangulo-azul2 {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+  .rectangulo-nombre {
+    left: 20%;
+  }
+  .rectangulo-azul {
+    width: 80%;
+  }
+  .rectangulo-azul2 {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 912px) and (max-height: 1368px) {
+  .rectangulo-nombre {
+    left: 25%;
+  }
+  .rectangulo-azul {
+    width: 80%;
+  }
+  .rectangulo-azul2 {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .rectangulo-nombre {
+    left: 30%;
+  }
+  .rectangulo-azul {
+    width: 80%;
+    height: 320px;
+  }
+  .rectangulo-azul2 {
+    width: 80%;
+    height: 320px;
+  }
+
+  .imagen {
+    width: 130px;
+    height: 240px;
+  }
+
+  .boton1,
+  .boton2,
+  .boton3,
+  .boton4,
+  .boton5,
+  .boton6,
+  .boton7,
+  .boton8,
+  .boton9,
+  .boton10 {
+    width: 75px;
+    height: 40px;
+    font-size: 3.5mm;
+  }
+  .boton1 {
+    left: -8.2%;
+  }
+  
+  .boton2 {
+    left: 1.2%;
+  }
+  
+  .boton3 {
+    left: 15.79%;
+  }
+  
+  .boton4 {
+    left: 25.29%;
+  }
+  
+  .boton5 {
+    left: 40.75%;
+  }
+  
+  .boton6 {
+    left: 50.3%;
+  }
+  
+  .boton7 {
+    left: 65.8%;
+  }
+  
+  .boton8 {
+    left: 75.3%;
+  }
+  
+  .boton9 {
+    left: 90.8%;
+  }
+  
+  .boton10 {
+    left: 100.3%;
+  }
+  
+  .imagen:first-child {
+    left: -9.5%;
+  }
+  .imagen:nth-child(2) {
+    left: 15.5%;
+  }
+  .imagen:nth-child(3) {
+    left: 40.5%;
+  }
+  .imagen:nth-child(4) {
+    left: 64.5%;
+  }
+  .imagen:nth-child(5) {
+    left: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) and (max-height: 1280px){
+  .rectangulo-nombre {
+    left: 30%;
+  }
+  .rectangulo-azul {
+    width: 80%;
+    height: 320px;
+  }
+  .rectangulo-azul2 {
+    width: 80%;
+    height: 320px;
+  }
+
+  .imagen {
+    width: 130px;
+    height: 240px;
+  }
+  
+
+  .boton1,
+  .boton2,
+  .boton3,
+  .boton4,
+  .boton5,
+  .boton6,
+  .boton7,
+  .boton8,
+  .boton9,
+  .boton10 {
+    width: 75px;
+    height: 40px;
+    font-size: 3.5mm;
+  }
+  .boton1 {
+    left: -8.2%;
+  }
+  
+  .boton2 {
+    left: 1.2%;
+  }
+  
+  .boton3 {
+    left: 15.79%;
+  }
+  
+  .boton4 {
+    left: 25.29%;
+  }
+  
+  .boton5 {
+    left: 40.75%;
+  }
+  
+  .boton6 {
+    left: 50.3%;
+  }
+  
+  .boton7 {
+    left: 65.8%;
+  }
+  
+  .boton8 {
+    left: 75.3%;
+  }
+  
+  .boton9 {
+    left: 90.8%;
+  }
+  
+  .boton10 {
+    left: 100.3%;
+  }
+  
+  .imagen:first-child {
+    left: -9.5%;
+  }
+  .imagen:nth-child(2) {
+    left: 15.5%;
+  }
+  .imagen:nth-child(3) {
+    left: 40.5%;
+  }
+  .imagen:nth-child(4) {
+    left: 64.5%;
+  }
+  .imagen:nth-child(5) {
+    left: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+  .rectangulo-nombre {
+      width: 400px;
+      top: -30%;
+      left: 25%;
+    }
+  .rectangulo-azul {
+    width: 80%;
+    height: 320px;
+  }
+  .rectangulo-azul2 {
+    width: 80%;
+    height: 320px;
+  }
+
+  .imagen {
+    width: 130px;
+    height: 240px;
+  }
+
+  .boton1,
+  .boton2,
+  .boton3,
+  .boton4,
+  .boton5,
+  .boton6,
+  .boton7,
+  .boton8,
+  .boton9,
+  .boton10 {
+    width: 75px;
+    height: 40px;
+    font-size: 3.5mm;
+  }
+  .boton1 {
+    left: -8.2%;
+  }
+  
+  .boton2 {
+    left: 1.2%;
+  }
+  
+  .boton3 {
+    left: 15.79%;
+  }
+  
+  .boton4 {
+    left: 25.29%;
+  }
+  
+  .boton5 {
+    left: 40.75%;
+  }
+  
+  .boton6 {
+    left: 50.3%;
+  }
+  
+  .boton7 {
+    left: 65.8%;
+  }
+  
+  .boton8 {
+    left: 75.3%;
+  }
+  
+  .boton9 {
+    left: 90.8%;
+  }
+  
+  .boton10 {
+    left: 100.3%;
+  }
+  
+  .imagen:first-child {
+    left: -9.5%;
+  }
+  .imagen:nth-child(2) {
+    left: 15.5%;
+  }
+  .imagen:nth-child(3) {
+    left: 40.5%;
+  }
+  .imagen:nth-child(4) {
+    left: 64.5%;
+  }
+  .imagen:nth-child(5) {
+    left: 90%;
+  }
+  }
+  
