@@ -130,7 +130,7 @@ function obtenerDireccionRelativa() {
     partes.splice(0, 3);
     const rutaFinal = partes.join('/');
 
-    return `../${rutaFinal}`;
+    return `/${rutaFinal}`;
 }
 
 

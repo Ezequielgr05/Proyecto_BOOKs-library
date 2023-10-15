@@ -117,7 +117,7 @@ document.body.addEventListener("click", function (event) {
     if (matrizDeLibros.length === 1) {
       matrizDeLibros = matrizDeLibros.filter(libro => libro[1] !== tituloAEliminar);
       localStorage.setItem("librosLeyendo", JSON.stringify(matrizDeLibros));
-      window.location.href = "/inicio.html";
+      window.location.href = "/Proyecto_BOOKs-library/inicio.html";
     } else {
       matrizDeLibros = matrizDeLibros.filter(libro => libro[1] !== tituloAEliminar);
       localStorage.setItem("librosLeyendo", JSON.stringify(matrizDeLibros));
