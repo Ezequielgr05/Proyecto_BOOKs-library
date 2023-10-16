@@ -57,7 +57,7 @@ rutas = {
     'LasManzanas': '../pdfs/Misterio/LasManzanas.pdf',
     'SherlockHolmes': '../pdfs/Misterio/SherlockHolmes.pdf',
     'LaGuitarraAzul': '../pdfs/Misterio/LaGuitarraAzul.pdf',
-    'ElCondeDeMontecristo': '../pdfs/Novelas/ElCondeDeMontecristo.pdf',
+    'ElCondeDeMonteCristo': '../pdfs/Novelas/ElCondeDeMontecristo.pdf',
     'ElHuesped': '../pdfs/Novelas/ElHuesped.pdf',
     'ElPrincipito': '../pdfs/Novelas/ElPrincipito.pdf',
     'ElVizcondeDeBragelonne': '../pdfs/Novelas/ElVizcondeDeBragelonne.pdf',

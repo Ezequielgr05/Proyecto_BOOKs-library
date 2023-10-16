@@ -43,7 +43,7 @@ libros = {
     'UnChicoConoceAOtro': 'Un nuevo comienzo en la relación de los dos chicos mientras enfrentan los altibajos de la vida y el amor.',
     'UnPasoAdelante': 'Los personajes siguen creciendo y aprendiendo mientras enfrentan cambios en sus vidas y relaciones.',
     'CancionDeHieloYFuego': 'El primer libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que presenta un mundo de intriga política, traición y batallas en Westeros.',
-    'ChocqueDeReyes': 'El segundo libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, donde continúan las luchas por el poder en Westeros y se desatan nuevas intrigas y traiciones.',
+    'ChoqueDeReyes': 'El segundo libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, donde continúan las luchas por el poder en Westeros y se desatan nuevas intrigas y traiciones.',
     'TormentaDeEspadasI': 'La tercera entrega de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que presenta batallas, traiciones y desafíos en un mundo lleno de personajes memorables.',
     'TormentaDeEspadasII': 'La cuarta parte de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que narra las consecuencias de las luchas por el trono de hierro y los peligros que acechan a Westeros.',
     'DanzaDeDragones': 'El quinto libro de la serie "Canción de Hielo y Fuego" de George R.R. Martin, que continúa las historias entrelazadas de personajes en un mundo lleno de giros y sorpresas.',
