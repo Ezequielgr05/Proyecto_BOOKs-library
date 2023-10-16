@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+body {
+    background-color: #E7FFF9;
+    font-family: 'Nunito Sans', sans-serif; 
+}
+.centrar-en-medio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-size: 36px;
+  }
+  .topboton {
+    position: relative;
+    margin-top: 275px;
+  }
+  .rectangulo-amarillo {
+    width: 250px;
+    height: 65px;
+    position: relative; 
+    top: -28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #ffcc00;
+    color: #003366;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 35px;
+    line-height: 65px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .rectangulo-botones {
+    position: absolute;
+    height: 120px;
+    width: 900px;
+    background-color: #003366;
+    bottom: 20%;
+    left: 16.35%;
+    border-radius: 5px;
+    z-index: 1;
+    margin-bottom: 50px;
+  }
+  .button {
+    top: 6%;
+    left: 2%;
+  }
+  .backdrop {
+    top: 48%;
+    left: 7.5%;
+  }
+  .button2 {
+    top: 6%;
+    left: 16%;
+  }
+  .backdrop2 {
+    top: 48%;
+    left: 21.6%;
+  }
+  .button3 {
+    top: 6%;
+    left: 30%;
+  }
+  .backdrop3 {
+    top: 48%;
+    left: 35.6%;
+  }
+  .button4 {
+    top: 6%;
+    left: 44%;
+  }
+  .backdrop4 {
+    top: 48%;
+    left: 49.55%;
+  }
+  .button5 {
+    top: 6%;
+    left: 58%;
+  }
+  .backdrop5 {
+    top: 48%;
+    left: 63.6%;
+  }
+  .button6 {
+    top: 6%;
+    left: 72%;
+  }
+  .backdrop6 {
+    top: 48%;
+    left: 77.55%;
+  }
+  .button7 {
+    top: 6%;
+    left: 86%;
+  }
+  .backdrop7 {
+    top: 48%;
+    left: 91.6%;
+  }
+  .button,
+  .button2,
+  .button3,
+  .button4,
+  .button5,
+  .button6,
+  .button7{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0px;
+    cursor: pointer;
+    outline: 0px;
+    padding: 0px;
+    font-weight: 600px;
+    font-size: 20px;
+    color: black;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .backdrop,
+  .backdrop2,
+  .backdrop3,
+  .backdrop4,
+  .backdrop5,
+  .backdrop6,
+  .backdrop7 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: #00cc99;
+    z-index: 1.5;
+    border-radius: 15px;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all ease-in-out 0.5s;
+  }
+  .button:hover+.backdrop,
+  .button2:hover+.backdrop2,
+  .button3:hover+.backdrop3,
+  .button4:hover+.backdrop4,
+  .button5:hover+.backdrop5,
+  .button6:hover+.backdrop6,
+  .button7:hover+.backdrop7 {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: rotate(15deg) translateX(-50%) translateY(-50%);
+  }
+  
+  .button:active,.button:active+.backdrop,
+  .button2:active,.button2:active+.backdrop2,
+  .button3:active,.button3:active+.backdrop3,
+  .button4:active,.button4:active+.backdrop4,
+  .button5:active,.button5:active+.backdrop5,
+  .button6:active,.button6:active+.backdrop6,
+  .button7:active,.button7:active+.backdrop7 {
+    box-shadow: none;
+  }
+   /* Responsive */
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
+  .rectangulo-amarillo {
+      left: 20%;
+    }
+  .rectangulo-botones {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) and (max-height: 768px) {
+  .rectangulo-amarillo {
+      left: 20%;
+      top: 11%;
+    }
+  .rectangulo-botones {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) and (max-height: 600px) {
+    .rectangulo-amarillo {
+      left: 20%;
+    }
+    .rectangulo-botones {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 912px) and (max-height: 1368px) {
+    .rectangulo-amarillo{
+      left: 25%;
+    }
+    .rectangulo-botones {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 820px) {
+    .rectangulo-amarillo {
+      left: 30%;
+    }
+    .rectangulo-botones {
+      width: 80%;
+      height: 320px;
+    }
+  
+    .button,
+    .button2,
+    .button3,
+    .button4,
+    .button5,
+    .button6,
+    .button7 {
+      width: 75px;
+      height: 40px;
+      font-size: 3.5mm;
+    }
+    .button {
+      left: -8.2%;
+    }
+    
+    .button2 {
+      left: 1.2%;
+    }
+    
+    .button3 {
+      left: 15.79%;
+    }
+    
+    .button4 {
+      left: 25.29%;
+    }
+    
+    .button5 {
+      left: 40.75%;
+    }
+    
+    .button6 {
+      left: 50.3%;
+    }
+    
+    .button7 {
+      left: 65.8%;
+    } 
+    .backdrop,
+  .backdrop2,
+  .backdrop3,
+  .backdrop4,
+  .backdrop5,
+  .backdrop6,
+  .backdrop7 {
+    width: 75px;
+      height: 40px;
+      font-size: 3.5mm;
+  }
+  .backdrop {
+    left: -8.2%;
+  }
+  
+  .backdrop2 {
+    left: 1.2%;
+  }
+  
+  .backdrop3 {
+    left: 15.79%;
+  }
+  
+  .backdrop4 {
+    left: 25.29%;
+  }
+  
+  .backdrop5 {
+    left: 40.75%;
+  }
+  
+  .backdrop6 {
+    left: 50.3%;
+  }
+  
+  .backdrop7 {
+    left: 65.8%;
+  } 
+  .button:hover+.backdrop,
+  .button2:hover+.backdrop2,
+  .button3:hover+.backdrop3,
+  .button4:hover+.backdrop4,
+  .button5:hover+.backdrop5,
+  .button6:hover+.backdrop6,
+  .button7:hover+.backdrop7 {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: rotate(15deg) translateX(-50%) translateY(-50%);
+  }
+  
+  .button:active,.button:active+.backdrop,
+  .button2:active,.button2:active+.backdrop2,
+  .button3:active,.button3:active+.backdrop3,
+  .button4:active,.button4:active+.backdrop4,
+  .button5:active,.button5:active+.backdrop5,
+  .button6:active,.button6:active+.backdrop6,
+  .button7:active,.button7:active+.backdrop7 {
+    box-shadow: none;
+  }
+  }
+  @media screen and (max-width: 800px) and (max-height: 1280px){
+    .rectangulo-amarillo {
+      left: 30%;
+    }
+    .rectangulo-botones {
+      width: 80%;
+      height: 320px;
+    }
+  
+    .button,
+    .button2,
+    .button3,
+    .button4,
+    .button5,
+    .button6,
+    .button7 {
+      width: 75px;
+      height: 40px;
+      font-size: 3.5mm;
+    }
+    .button {
+      left: -8.2%;
+    }
+    
+    .button2 {
+      left: 1.2%;
+    }
+    
+    .button3 {
+      left: 15.79%;
+    }
+    
+    .button4 {
+      left: 25.29%;
+    }
+    
+    .button5 {
+      left: 40.75%;
+    }
+    
+    .button6 {
+      left: 50.3%;
+    }
+    
+    .button7 {
+      left: 65.8%;
+    }
+    .backdrop,
+  .backdrop2,
+  .backdrop3,
+  .backdrop4,
+  .backdrop5,
+  .backdrop6,
+  .backdrop7 {
+    width: 75px;
+      height: 40px;
+      font-size: 3.5mm;
+  }
+  .backdrop {
+    left: -8.2%;
+  }
+  
+  .backdrop2 {
+    left: 1.2%;
+  }
+  
+  .backdrop3 {
+    left: 15.79%;
+  }
+  
+  .backdrop4 {
+    left: 25.29%;
+  }
+  
+  .backdrop5 {
+    left: 40.75%;
+  }
+  
+  .backdrop6 {
+    left: 50.3%;
+  }
+  
+  .backdrop7 {
+    left: 65.8%;
+  } 
+  .button:hover+.backdrop,
+  .button2:hover+.backdrop2,
+  .button3:hover+.backdrop3,
+  .button4:hover+.backdrop4,
+  .button5:hover+.backdrop5,
+  .button6:hover+.backdrop6,
+  .button7:hover+.backdrop7 {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: rotate(15deg) translateX(-50%) translateY(-50%);
+  }
+  
+  .button:active,.button:active+.backdrop,
+  .button2:active,.button2:active+.backdrop2,
+  .button3:active,.button3:active+.backdrop3,
+  .button4:active,.button4:active+.backdrop4,
+  .button5:active,.button5:active+.backdrop5,
+  .button6:active,.button6:active+.backdrop6,
+  .button7:active,.button7:active+.backdrop7 {
+    box-shadow: none;
+  }
+  }
+  
+  @media screen and (max-width: 768px) and (max-height: 1024px) {
+    .rectangulo-amarillo {
+        width: 400px;
+        top: -30%;
+        left: 25%;
+      }
+    .rectangulo-botones {
+      width: 80%;
+      height: 320px;
+    }
+    .button,
+    .button2,
+    .button3,
+    .button4,
+    .button5,
+    .button6,
+    .button7 {
+      width: 75px;
+      height: 40px;
+      font-size: 3.5mm;
+    }
+    .button {
+      left: -8.2%;
+    }
+    
+    .button2 {
+      left: 1.2%;
+    }
+    
+    .button3 {
+      left: 15.79%;
+    }
+    
+    .button4 {
+      left: 25.29%;
+    }
+    
+    .button5 {
+      left: 40.75%;
+    }
+    
+    .button6 {
+      left: 50.3%;
+    }
+    
+    .button7 {
+      left: 65.8%;
+    }
+    .backdrop,
+  .backdrop2,
+  .backdrop3,
+  .backdrop4,
+  .backdrop5,
+  .backdrop6,
+  .backdrop7 {
+    width: 75px;
+      height: 40px;
+      font-size: 3.5mm;
+  }
+  .backdrop {
+    left: -8.2%;
+  }
+  
+  .backdrop2 {
+    left: 1.2%;
+  }
+  
+  .backdrop3 {
+    left: 15.79%;
+  }
+  
+  .backdrop4 {
+    left: 25.29%;
+  }
+  
+  .backdrop5 {
+    left: 40.75%;
+  }
+  
+  .backdrop6 {
+    left: 50.3%;
+  }
+  
+  .backdrop7 {
+    left: 65.8%;
+  } 
+  .button:hover+.backdrop,
+  .button2:hover+.backdrop2,
+  .button3:hover+.backdrop3,
+  .button4:hover+.backdrop4,
+  .button5:hover+.backdrop5,
+  .button6:hover+.backdrop6,
+  .button7:hover+.backdrop7 {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: rotate(15deg) translateX(-50%) translateY(-50%);
+  }
+  
+  .button:active,.button:active+.backdrop,
+  .button2:active,.button2:active+.backdrop2,
+  .button3:active,.button3:active+.backdrop3,
+  .button4:active,.button4:active+.backdrop4,
+  .button5:active,.button5:active+.backdrop5,
+  .button6:active,.button6:active+.backdrop6,
+  .button7:active,.button7:active+.backdrop7 {
+    box-shadow: none;
+  }
+  }
+    
+  
